@@ -1,0 +1,40 @@
+CHANGES IN ZILLIB
+=============================================
+- Changed all <insert-file ...> in parser to <insert-file "zillib/..."
+
+BUGS
+=============================================
+* OK: ROOMS         - Rooms 1-54
+* OK: MESSAGES      - Message 0-103
+* OK: OBJECTS       - Objects 1-35
+* OK: SYSMESSAGES   - mESSAGE 1-34
+
+* OK: Alternative syntax to "RELEASE WIZARD/UNTIE WIZARD" - UNTIE ROPE, FREE WIZARD
+* What verb is REDE?
+* OK: "Encyclopedia..."
+* OK: TIE ROPE should have a response
+* OK: THROW ROPE AT BEAM should work
+* OK: DROP SPOON in ENTRY HALL gives strange message.
+* OK: GNOME, WAKE assumes he should wake [you].
+* OK: SAY XXX TO YYY should work as YYY, XXX
+* OK: LAMBERTH, MATRESS doesn't work
+* OK: SCORING:
+    OK: FREE WIZARD
+    OK: FIND VELVET CUSHION
+    OK: LAMBERTH, MATRESS
+    OK: FIND RADIO
+    OK: SLEEP WITH VELVET, SATIN, RADIO
+    OK: FIND BATTERY
+    OK: ESCAPE BRICK BUILDING WITH DEVICE INTACT
+    OK: ENTER NARROW LEDGE (SWING WITH ROPE)
+    OK: SOLVING GAME (SAY CROOK TO RANCE)
+    OK: SOLVING PETE AUSTIN
+* OK: Move every extension to after and use <SET REDEFINE T> for all.
+* OK: Mark every line that is changed in the extensions.
+* OK: NEW/MODE --> MODERN/CLASSIC
+* OK: INFO --> ABOUT
+* InvisiClues 
+
+
+
+ 

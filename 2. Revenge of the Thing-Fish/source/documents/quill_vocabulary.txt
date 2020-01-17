@@ -1,0 +1,106 @@
+Quill vocabulary
+================
+Verbs:
+    GET, TAKE
+    DROP
+    REMOVE
+    WEAR
+    I, INVENTORY
+    R, L, LOOK, REDE
+    QUIT, STOP
+    SAVE
+    LOAD
+    EXAMINE, READ, SEARCH
+    PRESS
+    BUY
+    OPEN
+    THROW
+    RELEASE, UNTIE
+    SAY
+    DRAW, CONNECT
+    TIE, GIVE
+    HIT, BREAK, ATTACK, KILL, STRIKE
+    INSERT
+    TURN
+    ON
+    OFF
+    PULL
+    WAKE
+    SLEEP
+    EAT
+    SPRAY
+    DIG
+    ENTER
+
+Directions:
+    N, NORTH
+    S, SOUTH
+    E, EAST
+    W, WEST
+    U, UP, CLIMB, ASCEND
+    D, DOWN, DESCEND
+    IN
+    OUT 
+
+Nouns:
+    MASHED, POTATOES
+    MAP
+    MAN
+    MUFFIN
+    SPOON
+    COIN
+    MAGNIFYING, GLASSES
+    BOX, KIT
+    SWORD
+    LAMP, LANTERN
+    BOTTLE
+    WHEELBARROW, MONEY
+    BEAM
+    CAN, REPELLENT, AEROSOL
+    SHOVEL
+    WRENCH
+    BOOKCASE, CASE
+    PENCIL
+    Q, P, LINE
+    WIZARD
+    ROPE
+    CAKE
+    ROSETTE
+    CUSHION, VELVET
+    SATIN
+    LAMBERTH
+    KEBABERUS, DOG
+    ANGEL, ZAPHOD, BEEBLEBROX
+    CHEATERS, LIARS, THIEVES, ROBBERS, SWINDLERS, CHUMPS, DECIEVERES, ARSONISTS, SNAKES, TRICKSTERS, TRAITORS
+    RADIO, TRANSISTOR
+    SKELETON, DWARF
+    BATTERY
+    DEVICE
+    LEAFLET
+    MIDGET
+    CLOAK
+    POSTER
+    THING-FISH
+    FUR, FURS
+    NOTE
+    JELL-O
+    BUTTON
+    RUG, CARPET
+    DOOR
+    PETE, AUSTIN
+    CUPCAKE
+    LEVER
+    XYZZY
+    GNOME
+    MATTRESS
+    RANCE
+    CROOK
+    OGRE
+    PLUGH, PLOVER
+    CLOCK
+    HOLE, WORMHOLE
+     *
+
+
+
+ 

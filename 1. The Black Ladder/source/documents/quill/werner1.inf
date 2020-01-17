@@ -1,0 +1,2556 @@
+
+
+Array QuillFlags -> 32;
+
+Include "Parser";
+
+Object Room_0
+    with description "You are standing beside a rotting old   
+                      ^house equipped with a front door. Next ^
+                      ^to the front door is a button and a sign
+                      ^reading ~PLEASE USE THE DOOR BELL!~.^All
+                      ^ around you is the forest, probably  inh
+                      ^abited by creatures yet only ^described 
+                      ^in adventure games.",
+         норт_to Room_3,
+         соут_to Room_5,
+         вест_to Room_4,
+         еаст_to Room_3;
+
+Object Room_1
+    with description "You are in the forest and very lost.^Han
+                      ^ging in a bush is a piece of red and whi
+                      ^te cloth with the number ~43~ writtenon 
+                      ^it.",
+         норт_to Room_2,
+         соут_to Room_2,
+         вест_to Room_6,
+         еаст_to Room_0;
+
+Object Room_2
+    with description "You are still wandering around ^aimlessl
+                      ^y in the forest, utterly lost.",
+         норт_to Room_1,
+         соут_to Room_2,
+         еаст_to Room_2,
+         вест_to Room_6;
+
+Object Room_3
+    with description "You are in the forest.",
+         норт_to Room_1,
+         соут_to Room_5,
+         еаст_to Room_4,
+         вест_to Room_2;
+
+Object Room_4
+    with description "You are lost in the forest. You notice  
+                      ^small furry animals being eaten by ^some
+                      ^what larger furry animals.",
+         норт_to Room_2,
+         соут_to Room_0,
+         вест_to Room_4,
+         еаст_to Room_4;
+
+Object Room_5
+    with description "You are in the forest. Resting against  
+                      ^a tree is a skeleton, probably the ^rema
+                      ^ins of a luckless orienteerer.",
+         норт_to Room_1,
+         соут_to Room_4,
+         еаст_to Room_5,
+         вест_to Room_4;
+
+Object Room_6
+    with description "You are in the forest, standing beside  
+                      ^a tree which looks so easy to climb even
+                      ^you could manage it.",
+         норт_to Room_4,
+         соут_to Room_4,
+         вест_to Room_4,
+         еаст_to Room_4,
+         асце_to Room_7;
+
+Object Room_7
+    with description "You are sitting somewhat unsteadily in  
+                      ^a tree. The sun is shining like a very  
+                      ^large star. The forest, which from here 
+                      ^appears to be composed of a large number
+                      ^of trees, stretches to the north as well
+                      ^as the south. To the east, far away, you
+                      ^can see Bilbo crawling out through the  
+                      ^Goblin's Back Door. To the west you can 
+                      ^see Arthur Dent lying in front of a huge
+                      ^yellow bulldozer. Beside you on the   ^b
+                      ^ranch is a severely ugly nest.",
+         десц_to Room_6;
+
+Object Room_8
+    with description "You are standing inside the rotting ^hou
+                      ^se. The house is sparsely furnished, in 
+                      ^fact not at all. On one wall is      pos
+                      ^itioned a sign. Beside the sign is a but
+                      ^ton, and an open trap door is placed in 
+                      ^the floor. The exit is west and thereis 
+                      ^a walk-in closet in the eastern wall.",
+         еаст_to Room_9;
+
+Object Room_9
+    with description "You are in a walk-in closet. The exit is
+                      ^to the west.",
+         вест_to Room_8;
+
+Object -> Object_5 "A china man's disguise";
+
+Object Room_10
+    with description "You are in a small room containing a    
+                      ^vending machine. Beside the stairway    
+                      ^leading down stands a huge troll,       
+                      ^brandishing a large axe. You can also   
+                      ^go up through a hole in the ceiling.",
+         асце_to Room_8;
+
+Object Room_11
+    with description "You are in the dungeon lobby, which is  
+                      ^furnished with large plush sofas. One   
+                      ^wall features a neon-lit sign. Doorways 
+                      ^lead off in all directions.",
+         асце_to Room_10,
+         еаст_to Room_12,
+         вест_to Room_17,
+         норт_to Room_21,
+         соут_to Room_22;
+
+Object Room_12
+    with description "You are in the Dungeonmaster's office.^I
+                      ^n the middle of the room stands an^enorm
+                      ^ous mahogany desk, and on the flooris a 
+                      ^thick carpet. The only exit is     throu
+                      ^gh a doorway to the west.",
+         вест_to Room_11;
+
+Object Room_13
+    with description "You are in a maze of passages.",
+         норт_to Room_15,
+         соут_to Room_16,
+         еаст_to Room_14,
+         вест_to Room_15;
+
+Object Room_14
+    with description "You are in a maze of passages.",
+         норт_to Room_14,
+         соут_to Room_16,
+         еаст_to Room_16,
+         вест_to Room_15;
+
+Object Room_15
+    with description "You are in a maze of passages.",
+         норт_to Room_13,
+         соут_to Room_18,
+         еаст_to Room_19,
+         вест_to Room_13;
+
+Object Room_16
+    with description "You are in a maze of passages.",
+         норт_to Room_15,
+         соут_to Room_17,
+         еаст_to Room_17,
+         вест_to Room_17;
+
+Object Room_17
+    with description "You are in a maze of passages.",
+         норт_to Room_17,
+         соут_to Room_18,
+         еаст_to Room_13,
+         вест_to Room_18;
+
+Object Room_18
+    with description "You are in a maze of passages.",
+         норт_to Room_17,
+         соут_to Room_15,
+         еаст_to Room_16,
+         вест_to Room_15;
+
+Object Room_19
+    with description "You are in a maze of passages.",
+         норт_to Room_20,
+         соут_to Room_18,
+         еаст_to Room_15,
+         вест_to Room_14;
+
+Object Room_20
+    with description "You are in the deserted gift shop of    
+                      ^Werner's dungeon. The exit is to the    
+                      ^south.",
+         соут_to Room_19;
+
+Object -> Object_8 "A statuette depicting a midget";
+
+Object Room_21
+    with description "You are in the toilet of Werner's ^dunge
+                      ^on. Like all toilets in adventures,it ha
+                      ^s no interesting features. The exitis to
+                      ^ the south.",
+         соут_to Room_11;
+
+Object Room_22
+    with description "You are at a junction in the dungeons.^P
+                      ^assages lead in all directions.",
+         норт_to Room_11,
+         вест_to Room_31,
+         еаст_to Room_23,
+         соут_to Room_32;
+
+Object Room_23
+    with description "You are in the Danish bakery viewing ^ro
+                      ^om. Through a large window in the^northe
+                      ^rn wall you can see two Danish    pastry
+                      ^ cooks baking and consuming large amount
+                      ^s of alcohol. To the east there isa door
+                      ^way marked ~CREW ONLY!~. Passages lead s
+                      ^outh and west.",
+         соут_to Room_26,
+         еаст_to Room_24,
+         вест_to Room_22;
+
+Object Room_24
+    with description "You are in a bare room. To the north    
+                      ^there is a door with a slot beside it.^A
+                      ^ doorway to the west leads to the ^Danis
+                      ^h bakery viewing room.",
+         вест_to Room_23;
+
+Object Room_25
+    with description "You are in the Danish bakery. In the    
+                      ^southern wall is set a large viewing    
+                      ^window through which you can see the    
+                      ^viewing room. The southern wall also    
+                      ^features a door. Preben & Preben, the^tw
+                      ^o inebriate Danish pastry cooks, are  he
+                      ^re. You notice a large number of      bo
+                      ^ttles positioned near the two Danes.";
+
+Object Room_26
+    with description "You are in the Twisting Passage. Chubby^
+                      ^Checkers is heard from concealed loud-^s
+                      ^peakers, and a large number of ^individu
+                      ^als are twisting to the music.  The pass
+                      ^age continues north and east.",
+         норт_to Room_23,
+         еаст_to Room_27;
+
+Object Room_27
+    with description "You are at the bar, which is tended by a
+                      ^gnome with a hip, gaily colored beard.^T
+                      ^he backroom is to the east and you can l
+                      ^eave the bar to the west.",
+         еаст_to Room_28,
+         вест_to Room_26;
+
+Object Room_28
+    with description "You are in the backroom of the bar. It ^
+                      ^is furnished with a table covered with  
+                      ^green cloth, and some chairs. The bar is
+                      ^to the west and to the east is a doorway
+                      ^with a sign reading ~DO UNDER NO ^CIRCUM
+                      ^STANCES GO FURTHER EAST!~.",
+         еаст_to Room_29,
+         вест_to Room_27;
+
+Object Room_29
+    with description "You are in a large cavern. A passage ^le
+                      ^ads west and another leads north.",
+         вест_to Room_28;
+
+Object -> Object_9 "A dragon";
+
+Object Room_30
+    with description "You are in the dragon's lair. The walls 
+                      ^are decorated with swords of Elvish ^cru
+                      ^ftmanship. The only exit is south.",
+         соут_to Room_29;
+
+Object -> Object_14 "A wireless telephone";
+
+Object Room_31
+    with description "You are in Rambo's lair. It is decorated
+                      ^with bamboo canes, bazookas and large   
+                      ^bowie knives. You can go east.",
+         еаст_to Room_22;
+
+Object -> Object_11 "Rambo";
+
+Object Room_32
+    with description "You are in a passage turning north and ^
+                      ^west.",
+         норт_to Room_22,
+         вест_to Room_33;
+
+Object Room_33
+    with description "You are at the top of an aluminium      
+                      ^spiral staircase winding down through   
+                      ^the bedrock. A passage leads east.",
+         еаст_to Room_32,
+         десц_to Room_34;
+
+Object Room_34
+    with description "You are at the bottom of the aluminium  
+                      ^staircase. A passage leads south.",
+         асце_to Room_33,
+         соут_to Room_35;
+
+Object Room_35
+    with description "You are in a hall in the depths of ^Wern
+                      ^er's dungeon. Passages lead in all^direc
+                      ^tions.",
+         норт_to Room_34,
+         соут_to Room_42,
+         вест_to Room_36,
+         еаст_to Room_47;
+
+Object Room_36
+    with description "You are in a dusty east-west corridor   
+                      ^with open doors on both sides. ",
+         норт_to Room_37,
+         соут_to Room_38,
+         еаст_to Room_35,
+         вест_to Room_39;
+
+Object Room_37
+    with description "You are in an obviously deserted ^dressi
+                      ^ng room. The exit is to the south.",
+         соут_to Room_36;
+
+Object -> Object_16 "A pair of spectacles";
+
+Object Room_38
+    with description "You are in an obviously deserted ^dressi
+                      ^ng room. The exit is to the north.",
+         норт_to Room_36;
+
+Object Room_39
+    with description "You are behind the stage of something   
+                      ^that slightly resembles a theatre.^A lit
+                      ^tle room lies to the west, the^corridor 
+                      ^is to the east and the stage isto the so
+                      ^uth.",
+         соут_to Room_41,
+         еаст_to Room_36,
+         вест_to Room_40;
+
+Object Room_40
+    with description "You are in the control room of the^theat
+                      ^re. It is equipped with a red ^button, a
+                      ^ green button, a blue button,^a yellow b
+                      ^utton and a large sign saying:~DO NOT TO
+                      ^UCH THE CONTROLS!~. You can ^leave the r
+                      ^oom to the east.",
+         еаст_to Room_39;
+
+Object Room_41
+    with description "You are on the stage of the dungeon     
+                      ^theatre. You can leave the stage to the 
+                      ^north.",
+         норт_to Room_39;
+
+Object -> Object_15 "The Thing-Fish";
+
+Object Room_42
+    with description "You are at a fork in the passages. You  
+                      ^can go north, south and west.",
+         норт_to Room_35,
+         вест_to Room_43,
+         соут_to Room_50;
+
+Object Room_43
+    with description "You are standing outside the local      
+                      ^theatre. A splenetic goblin, wearing a  
+                      ^spangled robe, is guarding the entrance,
+                      ^which is to the north. A passage leads  
+                      ^east.",
+         еаст_to Room_42;
+
+Object Room_44
+    with description "You are in the Evil Prince's Lab-Mo-^Tor
+                      ^ium. An over-sized mock pig is here. Bes
+                      ^ide it stands a large vat, marked^~GALOO
+                      ^T COLOGNE~. A pipe is leading^from the v
+                      ^at to the pig. Exits lead eastand west.",
+         еаст_to Room_45;
+
+Object ->  "A midget with a bucket and a mop"
+    with name ;
+
+Object ->  "The Evil Prince, sitting on the edge of 
+                    ^the vat repairing the pipe with         
+                    ^tissues and plumber pipe jointing tape"
+    with name ;
+
+Object Room_45
+    with description "You are in the mirror room. A large^mirr
+                      ^or occupies the northern wall.^Through t
+                      ^he mirror you can see the^interior of a 
+                      ^severely ugly and badly-^maintained cast
+                      ^le. You can go east and  west.",
+         вест_to Room_44,
+         еаст_to Room_48;
+
+Object Room_46
+    with description "You are in a small room in a badly-^main
+                      ^tained castle. To the north there isa cl
+                      ^osed plain wooden door. The wizard  is h
+                      ^ere. The wizard prompts you to open the 
+                      ^door.";
+
+Object Room_47
+    with description "You are in the halls of Theobald the^tre
+                      ^ndy, the last of the dwarven kings.^It i
+                      ^s now deserted. The only remains of its 
+                      ^former glory are some posters taped to t
+                      ^he stone walls. The exit is to the  west
+                      ^.",
+         вест_to Room_35;
+
+Object Room_48
+    with description "You are in an east-west corridor.^A door
+                      ^way leads north.",
+         норт_to Room_49,
+         вест_to Room_45,
+         еаст_to Room_56;
+
+Object Room_49
+    with description "You are in the Dungeon's Octagonal Rod  
+                      ^Storage Room. The exit is to the south.",
+         соут_to Room_48;
+
+Object ->  "A bunch of different-coloured, octagonal
+                    ^rods"
+    with name ;
+
+Object Room_50
+    with description "You are in a cave with exits to the     
+                      ^north, south and east.",
+         норт_to Room_42,
+         соут_to Room_51,
+         еаст_to Room_52;
+
+Object Room_51
+    with description "You are in a blue north-south corridor, 
+                      ^which branches to the east.",
+         норт_to Room_50,
+         соут_to Room_61,
+         еаст_to Room_58;
+
+Object Room_52
+    with description "You are in the waiting room of the Evil 
+                      ^Prince's Lab-Mo-Torium. On one wall^hang
+                      ^s a framed diploma. The Lab-Mo-^Torium l
+                      ^ies east and the exit is west.",
+         вест_to Room_50;
+
+Object ->  "A magazine"
+    with name ;
+
+Object Room_53
+    with description "You are on the bridge of the Heart of   
+                      ^Gold spaceship. Next to Eddie, the      
+                      ^shipboard computer, stands a strange    
+                      ^machine equipped with a large switch.   
+                      ^You can go south, west and down.",
+         соут_to Room_47,
+         десц_to Room_54;
+
+Object Room_54
+    with description "You are in the corridor of the Heart of 
+                      ^Gold. A gallery lies to the west and a  
+                      ^ladder leads up.",
+         вест_to Room_55,
+         асце_to Room_53;
+
+Object Room_55
+    with description "You are in a small gallery. Against one 
+                      ^wall stands a Nutri-Mat Liquid ^Dispensi
+                      ^ng Machine with a large pad.^Arthur Dent
+                      ^ is here, trying to persuade the machine
+                      ^ into supplying him with a^cup of tea, b
+                      ^ut all he gets is Advanced Tea Substitut
+                      ^e.",
+         еаст_to Room_54;
+
+Object Room_56
+    with description "You are in an east-west corridor. To the
+                      ^east there is a stout door guarded by a 
+                      ^well-armed guard. The guard says: ~What 
+                      ^is the password?~",
+         вест_to Room_48;
+
+Object Room_57
+    with description "You are in a room in a castle. The exit 
+                      ^is west.",
+         вест_to Room_56;
+
+Object ->  "Edmund, Duke of Edinburgh, also known   
+                    ^as the Black Adder"
+    with name ;
+
+Object ->  "A black ladder"
+    with name ;
+
+Object Room_58
+    with description "You are in a dusty cellar. A stairway   
+                      ^leads up. You can also go west.",
+         вест_to Room_51,
+         асце_to Room_59;
+
+Object Room_59
+    with description "You are in a smelly old farm. You can   
+                      ^see a large number of farmers and also  
+                      ^Miriam, the butcher's second fattest^dau
+                      ^ghter. In one corner stands a tiled  sto
+                      ^ve, and the door is to the north. ",
+         десц_to Room_58;
+
+Object Room_60
+    with description "You are on Francesco's front lawn.^Franc
+                      ^esco, the unknown Italian, is here.He wa
+                      ^tches you through red plastic^binoculars
+                      ^. To the north is a cardboard hut.";
+
+Object Room_61
+    with description "You are in Sir Percy's chamber. The exit
+                      ^is to the north. Sir Percy is here.",
+         норт_to Room_51;
+
+Object Room_62
+    with description "You are standing on top of a ladder,    
+                      ^looking down into a gigantic vat of     
+                      ^Galoot Cologne.",
+         десц_to Room_44;
+
+Object ->  "The Evil Prince, sitting on the edge of 
+                    ^the vat fiddling with the pipe"
+    with name ;
+
+[QuillFlagSet flag var; 
+ QuillFlags->flag = var; 
+ if (flag == 0 && var == 0) give player ~light; 
+ if (flag == 0 && var ~= 0) give player light; 
+ if (flag == 30) score = var;
+];
+
+[QuillDummy ; rfalse; ];
+
+[QuillPause x y; 
+ switch(QuillFlags->28)
+ {
+  7: font on; rtrue;
+  8: font off; rtrue;
+ }
+ x = (x / 5); 
+ @read_char 1 x QuillDummy -> y;
+];
+
+[QuillDec flag; 
+ if (QuillFlags->flag > 0)
+ { QuillFlags->flag = QuillFlags->flag - 1; }
+];
+
+[LookRoutine; 
+ QuillDec(2); 
+ if (player hasnt light)  QuillDec(3); 
+ if (location == thedark) QuillDec(4); 
+];
+
+
+
+Object QuillPlayer
+      with daemon [ n i;
+         QuillFlags->1 = 0; 
+         objectloop(i in player) { if (i hasnt worn) { QuillFlags->1 = QuillFlags->1 + 1; } }
+         for (n=5:n<9:n++) QuillDec(n); 
+         if (player hasnt light) QuillDec(9); 
+         if (location == thedark) QuillDec(10); 
+         QuillProcess();
+         ],
+    has light transparent concealed animate proper;
+! This is where Quill's global light flag ends up 
+
+
+
+
+Object   "A source of light."
+    with name 
+    has light;
+
+Object  Object_1 "A shiny coin";
+
+Object  Object_2 "An over-sized chrome spoon";
+
+Object  Object_3 "A pink ticket";
+
+Object  Object_4 "A curious map";
+
+Object  Object_6 "A brochure";
+
+Object  Object_7 "A Danish bakery access card";
+
+Object  Object_10 "A drink";
+
+Object  Object_12 "A Danish pastry";
+
+Object  Object_13 "A babel fish in your ear";
+
+Object   "A spectacle-wearing midget"
+    with name ;
+
+Object   "A midget involved in conversation with  
+                    ^the statuette"
+    with name ;
+
+Object   "A black rod"
+    with name ;
+
+Object   "A bridge to the north"
+    with name ;
+
+Object   "A cup of tea"
+    with name ;
+
+Object   "A cologne-soaked Danish pastry"
+    with name ;
+
+!
+! Response conditions
+!
+[GamePreRoutine loc tmp i;
+
+    loc = location;
+    if (loc == thedark) loc = real_location;
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_24) && 
+        (QuillFlags->20 ~= 0))
+    {
+        QuillPause(25);
+        LookSub(0); rtrue;
+        rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_29) && 
+        (~IndirectlyContains (loc, Object_9)))
+    {
+        QuillPause(30);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_29) && 
+        (IndirectlyContains (loc, Object_9)))
+    {
+        ! PAPER 61;
+        rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_43))
+    {
+        ! PAPER 87;
+    }
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_47) && 
+        (IndirectlyContains (loc, )))
+    {
+        QuillPause(53);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_59))
+    {
+        ! PAPER 137;
+        rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_60) && 
+        (QuillFlags->28 == 4))
+    {
+        @erase_window -1;
+        ! PAPER 139;
+        ! PAPER 140;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((action == ##Go) && 
+        (noun == норт_obj) && 
+        (loc == Room_60) && 
+        (QuillFlags->28 < 4))
+    {
+        ! PAPER 141;
+    }
+    if ((action == ##Go) && 
+        (noun == соут_obj) && 
+        (loc == Room_25))
+    {
+        move  to loc;
+        ! PAPER 58;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(24);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == еаст_obj) && 
+        (loc == Room_52) && 
+        (QuillFlags->24 == 0))
+    {
+        ! PAPER 92;
+        rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == еаст_obj) && 
+        (loc == Room_52) && 
+        (QuillFlags->24 ~= 0))
+    {
+        QuillPause(44);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == вест_obj) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 ~= 0))
+    {
+        QuillPause(0);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == вест_obj) && 
+        (loc == Room_44) && 
+        (QuillFlags->24 == 0))
+    {
+        ! PAPER 91;
+        rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == вест_obj) && 
+        (loc == Room_44) && 
+        (QuillFlags->24 ~= 0))
+    {
+        QuillPause(52);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == вест_obj) && 
+        (loc == Room_53))
+    {
+        ! PAPER 113;
+        rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == асце_obj) && 
+        (loc == Room_44) && 
+        (IndirectlyContains (loc, )) && 
+        (~IndirectlyContains (player, )))
+    {
+        QuillPause(62);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##Go) && 
+        (noun == десц_obj) && 
+        (loc == Room_10))
+    {
+        ! PAPER 16;
+    }
+    if ((action == ##Go) && 
+        (noun == десц_obj) && 
+        (loc == Room_8) && 
+        (QuillFlags->12 == 0))
+    {
+        ! PAPER 23;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((action == ##Go) && 
+        (noun == десц_obj) && 
+        (loc == Room_8) && 
+        (QuillFlags->12 ~= 0))
+    {
+        QuillPause(10);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##ин  ) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 ~= 0))
+    {
+        QuillPause(8);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##слид) && 
+        (noun == WordObj_цоин) && 
+        (IndirectlyContains (player, Object_1)) && 
+        (loc == Room_10))
+    {
+        <Remove Object_1>;
+        <Take Object_3>;
+        ! PAPER 15;
+    }
+    if ((action == ##слид) && 
+        (noun == WordObj_цард) && 
+        (loc == Room_24) && 
+        (IndirectlyContains (player, Object_7)) && 
+        (QuillFlags->20 == 0))
+    {
+        ! PAPER 53;
+        remove ;
+        rtrue;
+    }
+    if ((action == ##слид) && 
+        (noun == WordObj_цард) && 
+        (loc == Room_24) && 
+        (QuillFlags->20 ~= 0))
+    {
+        ! PAPER 21;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_тицк) && 
+        (loc == Room_10) && 
+        (IndirectlyContains (player, Object_3)))
+    {
+        <Remove Object_3>;
+        ! PAPER 17;
+        <Take Object_6>;
+        ! BORDER 6;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(11);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_дрин) && 
+        (loc == Room_25) && 
+        (~IndirectlyContains (player, Object_13)) && 
+        (IndirectlyContains (player, Object_10)))
+    {
+        ! PAPER 46;
+        <Remove Object_10>;
+        <Take Object_12>;
+        ! BORDER 12;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_дрин) && 
+        (loc == Room_25) && 
+        (IndirectlyContains (player, Object_10)) && 
+        (IndirectlyContains (player, Object_13)))
+    {
+        ! PAPER 69;
+        <Remove Object_10>;
+        <Take Object_12>;
+        ! BORDER 12;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_паст) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (loc, )) && 
+        (IndirectlyContains (player, Object_12)) && 
+        (QuillFlags->28 == 0))
+    {
+        ! PAPER 129;
+        QuillFlagSet(28,255);
+        LookSub(0); rtrue;
+        <Remove Object_12>;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_паст) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (player, )) && 
+        (IndirectlyContains (loc, )) && 
+        (QuillFlags->28 == 0))
+    {
+        ! PAPER 129;
+        QuillFlagSet(28,255);
+        print "You don't really mean that, do you?"; if (YesOrNo() == 0) rtrue;
+        <Remove >;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_паст) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (player, Object_12)) && 
+        (IndirectlyContains (loc, )) && 
+        (QuillFlags->28 ~= 0))
+    {
+        ! PAPER 130;
+        QuillFlagSet(28,255);
+        print "You don't really mean that, do you?"; if (YesOrNo() == 0) rtrue;
+        <Remove Object_12>;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_паст) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (player, )) && 
+        (IndirectlyContains (loc, )) && 
+        (QuillFlags->28 ~= 0))
+    {
+        ! PAPER 130;
+        QuillFlagSet(28,255);
+        rtrue;
+        <Remove >;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_спец) && 
+        (IndirectlyContains (player, Object_16)) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 93;
+        <Remove >;
+        <Remove Object_16>;
+        <Take >;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_спец) && 
+        (IndirectlyContains (player, Object_16)) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 96;
+        <Remove >;
+        <Remove Object_16>;
+        <Take >;
+        move  to loc;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_цуп ) && 
+        (loc == Room_55) && 
+        (IndirectlyContains (player, )))
+    {
+        ! PAPER 118;
+        <Remove >;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_цуп ) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (player, )) && 
+        (IndirectlyContains (loc, )) && 
+        (QuillFlags->28 == 0))
+    {
+        ! PAPER 128;
+        <Remove >;
+        QuillFlagSet(28,255);
+        LookSub(0); rtrue;
+        rtrue;
+    }
+    if ((action == ##схов) && 
+        (noun == WordObj_цуп ) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (player, )) && 
+        (IndirectlyContains (loc, )) && 
+        (QuillFlags->28 ~= 0))
+    {
+        ! PAPER 131;
+        tmp = parent(); move Object_2 to parent(); move Object_2 to tmp;
+        <Remove >;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_артх) && 
+        (loc == Room_55))
+    {
+        ! PAPER 119;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_цоин) && 
+        (IndirectlyContains (loc, Object_1)))
+    {
+        ! PAPER 12;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_сигн) && 
+        (loc == Room_8))
+    {
+        ! PAPER 8;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_сигн) && 
+        (loc == Room_11))
+    {
+        ! PAPER 9;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_мацх) && 
+        (loc == Room_10))
+    {
+        ! PAPER 13;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 == 0))
+    {
+        ! PAPER 25;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 ~= 0))
+    {
+        ! PAPER 26;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 == 0))
+    {
+        ! PAPER 1;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 ~= 0))
+    {
+        ! PAPER 26;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_24) && 
+        (QuillFlags->20 == 0))
+    {
+        ! PAPER 25;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_24) && 
+        (QuillFlags->20 ~= 0))
+    {
+        ! PAPER 26;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_25))
+    {
+        ! PAPER 26;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_дисг) && 
+        (IndirectlyContains (loc, Object_5)))
+    {
+        ! PAPER 14;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_скел) && 
+        (loc == Room_5) && 
+        (QuillFlags->13 == 0))
+    {
+        ! PAPER 5;
+        <Take Object_4>;
+        remove Object_13;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_аним) && 
+        (loc == Room_4))
+    {
+        ! PAPER 7;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_цлот) && 
+        (loc == Room_1))
+    {
+        ! PAPER 10;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_нест) && 
+        (loc == Room_7) && 
+        (QuillFlags->14 == 0))
+    {
+        ! PAPER 6;
+        <Take Object_1>;
+        <Take Object_2>;
+        remove Object_14;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_трол) && 
+        (loc == Room_10))
+    {
+        ! PAPER 18;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_мап ) && 
+        (IndirectlyContains (loc, Object_4)))
+    {
+        ! PAPER 29;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_броц) && 
+        (IndirectlyContains (loc, Object_6)))
+    {
+        ! PAPER 19;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_софа) && 
+        (loc == Room_11) && 
+        (QuillFlags->15 == 0))
+    {
+        ! PAPER 27;
+        remove Object_15;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_деск) && 
+        (loc == Room_12) && 
+        (QuillFlags->16 == 0))
+    {
+        ! PAPER 28;
+        remove Object_16;
+        <Take Object_7>;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_стат) && 
+        (IndirectlyContains (loc, Object_8)))
+    {
+        ! PAPER 80;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_рамб) && 
+        (IndirectlyContains (loc, Object_11)))
+    {
+        ! PAPER 55;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_драг) && 
+        (IndirectlyContains (loc, Object_9)))
+    {
+        ! PAPER 57;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_цоок) && 
+        (loc == Room_25))
+    {
+        ! PAPER 56;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_паст) && 
+        (IndirectlyContains (loc, Object_12)))
+    {
+        ! PAPER 54;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_тхин) && 
+        (IndirectlyContains (loc, Object_15)))
+    {
+        ! PAPER 88;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_виза) && 
+        (loc == Room_46))
+    {
+        ! PAPER 101;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_пост) && 
+        (loc == Room_47))
+    {
+        ! PAPER 103;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_бунц) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 112;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_дипл) && 
+        (loc == Room_52))
+    {
+        ! PAPER 105;
+        rtrue;
+    }
+    if ((action == ##реад) && 
+        (noun == WordObj_мага) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 104;
+        rtrue;
+    }
+    if ((action == ##реад))
+    {
+        ! PAPER 0;
+    }
+    if ((action == ##опен) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 == 0))
+    {
+        ! PAPER 1;
+        rtrue;
+    }
+    if ((action == ##опен) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 ~= 0))
+    {
+        ! PAPER 21;
+        rtrue;
+    }
+    if ((action == ##опен) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 == 0))
+    {
+        remove Object_11;
+        "OK.";
+    }
+    if ((action == ##опен) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 ~= 0))
+    {
+        ! PAPER 21;
+    }
+    if ((action == ##опен) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_46))
+    {
+        ! PAPER 102;
+        remove ;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(35);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##пусх) && 
+        (noun == WordObj_бутт) && 
+        (loc == Room_0))
+    {
+        ! PAPER 2;
+        rtrue;
+    }
+    if ((action == ##пусх) && 
+        (noun == WordObj_бутт) && 
+        (loc == Room_8) && 
+        (QuillFlags->12 == 0))
+    {
+        remove Object_12;
+        ! PAPER 20;
+        rtrue;
+    }
+    if ((action == ##пусх) && 
+        (noun == WordObj_бутт) && 
+        (loc == Room_8) && 
+        (QuillFlags->12 ~= 0))
+    {
+        move Object_12 to loc;
+        ! PAPER 20;
+        rtrue;
+    }
+    if ((action == ##пусх) && 
+        (noun == WordObj_пад ) && 
+        (loc == Room_55) && 
+        (QuillFlags->27 == 0))
+    {
+        ! PAPER 114;
+        remove ;
+        <Take >;
+        rtrue;
+    }
+    if ((action == ##пусх) && 
+        (noun == WordObj_пад ) && 
+        (loc == Room_55) && 
+        (QuillFlags->27 ~= 0))
+    {
+        ! PAPER 117;
+        rtrue;
+    }
+    if ((action == ##пусх) && 
+        (loc == Room_40))
+    {
+        ! PAPER 97;
+        rtrue;
+    }
+    if ((action == ##кноц) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 == 0))
+    {
+        remove Object_11;
+        ! PAPER 3;
+        rtrue;
+    }
+    if ((action == ##кноц) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 ~= 0))
+    {
+        ! PAPER 21;
+        rtrue;
+    }
+    if ((action == ##кноц) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 ~= 0))
+    {
+        ! PAPER 21;
+    }
+    if ((action == ##кноц) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 == 0))
+    {
+        ! PAPER 24;
+    }
+    if ((action == ##енте) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 ~= 0))
+    {
+        QuillPause(8);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##енте) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 ~= 0))
+    {
+        QuillPause(0);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##енте) && 
+        (noun == WordObj_хоус) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 ~= 0))
+    {
+        QuillPause(8);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##схут) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 ~= 0))
+    {
+        move Object_11 to loc;
+        "OK.";
+    }
+    if ((action == ##схут) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 ~= 0))
+    {
+        move Object_11 to loc;
+        "OK.";
+    }
+    if ((action == ##схут) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_8) && 
+        (QuillFlags->11 == 0))
+    {
+        ! PAPER 22;
+    }
+    if ((action == ##схут) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0) && 
+        (QuillFlags->11 == 0))
+    {
+        ! PAPER 22;
+    }
+    if ((action == ##килл) && 
+        (loc >  Room_9))
+    {
+        ! PAPER 30;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((action == ##ваит))
+    {
+        ! PAPER 37;
+        rtrue;
+    }
+    if ((action == ##дуцк) && 
+        (loc == Room_31) && 
+        (QuillFlags->18 ~= 0))
+    {
+        remove ;
+        "OK.";
+    }
+    if ((action == ##дуцк))
+    {
+        ! PAPER 43;
+    }
+    if ((action == ##буы ) && 
+        (noun == WordObj_дрин) && 
+        (loc == Room_27) && 
+        (IndirectlyContains (player, Object_1)))
+    {
+        ! PAPER 45;
+        <Remove Object_1>;
+        <Take Object_10>;
+        ! BORDER 10;
+        rtrue;
+    }
+    if ((action == ##буы ) && 
+        (noun == WordObj_дрин) && 
+        (loc == Room_27) && 
+        (~IndirectlyContains (player, Object_1)))
+    {
+        ! PAPER 60;
+        rtrue;
+    }
+    if ((action == ##еат ) && 
+        (noun == WordObj_паст) && 
+        (IndirectlyContains (loc, Object_12)))
+    {
+        ! PAPER 59;
+        <Remove Object_12>;
+    }
+    if ((action == ##еат ) && 
+        (noun == WordObj_паст) && 
+        (IndirectlyContains (player, )))
+    {
+        ! PAPER 133;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((action == ##диал) && 
+        (noun == WordObj_0832) && 
+        (loc >  Room_12) && 
+        (loc <  Room_20) && 
+        (IndirectlyContains (player, Object_14)))
+    {
+        ! PAPER 77;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(11);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##диал) && 
+        (noun == WordObj_0832) && 
+        (IndirectlyContains (player, Object_14)))
+    {
+        ! PAPER 78;
+        rtrue;
+    }
+    if ((action == ##диал) && 
+        (IndirectlyContains (player, Object_14)))
+    {
+        ! PAPER 79;
+    }
+    if ((action == ##раис) && 
+        (noun == WordObj_ханд) && 
+        (loc == Room_41) && 
+        (QuillFlags->22 == 2))
+    {
+        ! PAPER 84;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(44);
+        <Wear Object_15>;
+                move  to loc;
+        LookSub(0); rtrue;
+    }
+    if ((action == ##раис) && 
+        (noun == WordObj_ханд) && 
+        (loc == Room_41) && 
+        (QuillFlags->22 == 3))
+    {
+        ! PAPER 85;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((action == ##раис) && 
+        (noun == WordObj_ханд))
+    {
+        ! PAPER 43;
+    }
+    if ((action == ##важе) && 
+        (noun == WordObj_бунц) && 
+        (loc ~= Room_47) && 
+        (IndirectlyContains (player, )))
+    {
+        ! PAPER 108;
+        rtrue;
+    }
+    if ((action == ##важе) && 
+        (noun == WordObj_бунц) && 
+        (loc == Room_47) && 
+        (IndirectlyContains (player, )) && 
+        (~IndirectlyContains (loc, )))
+    {
+        ! PAPER 109;
+        <Take >;
+        rtrue;
+    }
+    if ((action == ##важе) && 
+        (noun == WordObj_бунц) && 
+        (loc == Room_47) && 
+        (IndirectlyContains (player, )) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 111;
+        <Remove >;
+        rtrue;
+    }
+    if ((action == ##важе) && 
+        (noun == WordObj_бунц) && 
+        (IndirectlyContains (player, )))
+    {
+        ! PAPER 110;
+    }
+    if ((action == ##флип) && 
+        (noun == WordObj_свит) && 
+        (loc == Room_53))
+    {
+        ! PAPER 115;
+        print "More..."; @read_char 1 tmp; print "^";
+        @erase_window -1;
+        ! PAPER 116;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(35);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##соак) && 
+        (noun == WordObj_паст) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (player, Object_12)))
+    {
+        ! PAPER 127;
+        <Remove Object_12>;
+        <Take >;
+        ! BORDER 27;
+        rtrue;
+    }
+    if ((action == ##соак) && 
+        (noun == WordObj_паст) && 
+        (loc == Room_62) && 
+        (IndirectlyContains (player, )))
+    {
+        ! PAPER 127;
+        rtrue;
+    }
+    if ((action == ##ринг) && 
+        (noun == WordObj_белл) && 
+        (loc == Room_0))
+    {
+        ! PAPER 2;
+        rtrue;
+    }
+    if ((action == ##пеас) && 
+        (loc == Room_59))
+    {
+        ! PAPER 138;
+    }
+    if ((action == ##гуар) && 
+        (noun == WordObj_моос) && 
+        (loc == Room_56))
+    {
+        ! PAPER 134;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(57);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##гуар) && 
+        (loc == Room_56))
+    {
+        ! PAPER 135;
+    }
+    if ((action == ##прин) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 122;
+        rtrue;
+    }
+    if ((action == ##прин) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 122;
+        rtrue;
+    }
+    if ((action == ##перц) && 
+        (loc == Room_61))
+    {
+        ! PAPER 126;
+        rtrue;
+    }
+    if ((action == ##мири) && 
+        (noun == WordObj_синг) && 
+        (loc == Room_59))
+    {
+        ! PAPER 136;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(60);
+        LookSub(0); rtrue;
+    }
+    if ((action == ##мири) && 
+        (loc == Room_59))
+    {
+        ! PAPER 122;
+    }
+    if ((action == ##едму) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 124;
+        rtrue;
+    }
+    if ((action == ##гобл) && 
+        (loc == Room_43))
+    {
+        ! PAPER 122;
+        rtrue;
+    }
+    if ((action == ##гном) && 
+        (loc == Room_27))
+    {
+        ! PAPER 122;
+        rtrue;
+    }
+    if ((action == ##трол) && 
+        (loc == Room_10))
+    {
+        ! PAPER 74;
+    }
+    if ((action == ##рамб) && 
+        (noun == WordObj_хелл) && 
+        (IndirectlyContains (loc, Object_11)))
+    {
+        ! PAPER 71;
+        rtrue;
+    }
+    if ((action == ##рамб) && 
+        (IndirectlyContains (loc, Object_11)))
+    {
+        ! PAPER 72;
+        rtrue;
+    }
+    if ((action == ##цоок) && 
+        (loc == Room_25))
+    {
+        ! PAPER 73;
+    }
+    if ((action == ##дрин) && 
+        (noun == WordObj_дрин) && 
+        (IndirectlyContains (loc, Object_10)))
+    {
+        ! PAPER 31;
+        <Remove Object_10>;
+    }
+    if ((action == ##дрин) && 
+        (noun == WordObj_цуп ) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 120;
+        move  to loc;
+        <Remove >;
+        rtrue;
+    }
+    if ((action == ##тхин) && 
+        (IndirectlyContains (loc, Object_15)))
+    {
+        ! PAPER 121;
+        rtrue;
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_ладд) && 
+        (loc == Room_57) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 123;
+        rtrue;
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_ладд))
+    {
+        ! BORDER 26;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_цоин))
+    {
+        ! BORDER 1;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_споо))
+    {
+        ! BORDER 2;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_тицк))
+    {
+        ! BORDER 3;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_дисг))
+    {
+        ! BORDER 5;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_цлип) && 
+        (loc == Room_1))
+    {
+        ! PAPER 11;
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_мап ) && 
+        (loc == Room_5) && 
+        (IndirectlyContains (loc, Object_4)))
+    {
+        ! PAPER 4;
+        <Remove Object_4>;
+        remove Object_13;
+        rtrue;
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_броц))
+    {
+        ! BORDER 6;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_цард))
+    {
+        ! BORDER 7;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_стат) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 95;
+        rtrue;
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_стат))
+    {
+        ! BORDER 8;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_ботт) && 
+        (loc == Room_25) && 
+        (~IndirectlyContains (player, Object_13)))
+    {
+        ! PAPER 47;
+        rtrue;
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_ботт) && 
+        (loc == Room_25) && 
+        (IndirectlyContains (player, Object_13)))
+    {
+        ! PAPER 70;
+        rtrue;
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_дрин))
+    {
+        ! BORDER 10;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_паст) && 
+        (IndirectlyContains (loc, Object_12)))
+    {
+        ! BORDER 12;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_паст) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! BORDER 27;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_пхон))
+    {
+        ! BORDER 14;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_спец))
+    {
+        ! BORDER 16;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_бунц) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! BORDER 21;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_бунц) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! BORDER 22;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_мага))
+    {
+        ! BORDER 20;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_цуп ))
+    {
+        ! BORDER 24;
+        "OK.";
+    }
+    if ((action == ##таке) && 
+        (noun == WordObj_инже))
+    {
+        InvTallSub();
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_ладд) && 
+        (loc == Room_44))
+    {
+        PlayerTo(Room_26);
+        ! PAPER 142;
+        rtrue;
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_ладд))
+    {
+        PlayerTo(Room_26);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_цоин))
+    {
+        PlayerTo(Room_1);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_споо))
+    {
+        PlayerTo(Room_2);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_тицк))
+    {
+        PlayerTo(Room_3);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_дисг))
+    {
+        PlayerTo(Room_5);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_броц))
+    {
+        PlayerTo(Room_6);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_цард))
+    {
+        PlayerTo(Room_7);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_стат))
+    {
+        PlayerTo(Room_8);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_дрин))
+    {
+        PlayerTo(Room_10);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_паст) && 
+        (IndirectlyContains (player, Object_12)))
+    {
+        PlayerTo(Room_12);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_паст) && 
+        (IndirectlyContains (player, )))
+    {
+        PlayerTo(Room_27);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_бабе) && 
+        (IndirectlyContains (player, Object_13)))
+    {
+        ! PAPER 63;
+        <Remove Object_13>;
+        rtrue;
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_пхон))
+    {
+        PlayerTo(Room_14);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_спец))
+    {
+        PlayerTo(Room_16);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_бунц) && 
+        (IndirectlyContains (player, )))
+    {
+        PlayerTo(Room_21);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_бунц) && 
+        (IndirectlyContains (player, )))
+    {
+        PlayerTo(Room_22);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_мага))
+    {
+        PlayerTo(Room_20);
+        "OK.";
+    }
+    if ((action == ##дроп) && 
+        (noun == WordObj_цуп ))
+    {
+        PlayerTo(Room_24);
+        "OK.";
+    }
+    if ((action == ##ремо) && 
+        (noun == WordObj_дисг) && 
+        (loc == Room_31) && 
+        (IndirectlyContains (loc, Object_11)))
+    {
+        ! PAPER 42;
+        move  to loc;
+        ! INK 5;
+        rtrue;
+    }
+    if ((action == ##ремо) && 
+        (noun == WordObj_дисг))
+    {
+        ! INK 5;
+        "OK.";
+    }
+    if ((action == ##веар) && 
+        (noun == WordObj_дисг))
+    {
+        print "The examination reveals that the ^skelet
+                    ^on consists of 206 bones and is   clutch
+                    ^ing at a curious map.";
+        "OK.";
+    }
+    if ((action == ##веар) && 
+        (noun == WordObj_спец) && 
+        (IndirectlyContains (player, Object_16)))
+    {
+        ! PAPER 98;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((action == ##инже))
+    {
+        InvTallSub();
+    }
+    if ((action == ##лоок) && 
+        (noun == WordObj_унде) && 
+        (loc == Room_28) && 
+        (QuillFlags->21 == 0))
+    {
+        ! PAPER 44;
+        <Take Object_1>;
+        remove ;
+        rtrue;
+    }
+    if ((action == ##лоок) && 
+        (noun == WordObj_унде) && 
+        (loc == Room_28) && 
+        (QuillFlags->21 ~= 0))
+    {
+        ! PAPER 0;
+        rtrue;
+    }
+    if ((action == ##лоок))
+    {
+        LookSub(0); rtrue;
+    }
+    if ((action == ##стоп))
+    {
+        print "You don't really mean that, do you?"; if (YesOrNo() == 0) rtrue;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((action == ##саже))
+    {
+        SaveSub(); LookSub(); rtrue;
+    }
+    if ((action == ##лоад))
+    {
+        RestoreSub(); rtrue;
+    }
+    rfalse;
+];
+
+
+!
+! Process conditions
+!
+[QuillProcess loc tmp i;
+
+    loc = location;
+    if (loc == thedark) loc = real_location;
+    if ((loc == Room_62) && 
+        (IndirectlyContains (loc, )) && 
+        (QuillFlags->28 == 4))
+    {
+        ! PAPER 132;
+        <Remove >;
+        <Remove >;
+    }
+    if ((loc == Room_57) && 
+        (IndirectlyContains (loc, )) && 
+        (Object_5 has worn))
+    {
+        ! PAPER 125;
+        <Remove >;
+    }
+    if ((~IndirectlyContains (player, Object_6)) && 
+        (loc >  Room_10) && 
+        (random(100) < 3))
+    {
+        ! PAPER 75;
+        <Take Object_6>;
+        ! BORDER 6;
+    }
+    if ((IndirectlyContains (player, Object_6)) && 
+        (loc >  Room_10) && 
+        (random(100) < 3))
+    {
+        ! PAPER 76;
+    }
+    if ((IndirectlyContains (loc, Object_11)) && 
+        (Object_5 has worn) && 
+        (QuillFlags->18 ~= 0) && 
+        (QuillFlags->19 == 0))
+    {
+        ! PAPER 39;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((IndirectlyContains (loc, Object_11)) && 
+        (Object_5 has worn) && 
+        (IndirectlyContains (loc, Object_9)) && 
+        (QuillFlags->18 ~= 0) && 
+        (QuillFlags->19 ~= 0))
+    {
+        ! PAPER 41;
+        <Remove Object_9>;
+        move  to loc;
+        QuillFlagSet(18,255);
+        LookSub(0); rtrue;
+        move  to loc;
+        rtrue;
+    }
+    if ((IndirectlyContains (loc, Object_11)) && 
+        (Object_5 has worn) && 
+        (QuillFlags->18 ~= 0) && 
+        (QuillFlags->19 ~= 0))
+    {
+        ! PAPER 40;
+        <Remove Object_11>;
+        move  to loc;
+        move  to loc;
+        rtrue;
+    }
+    if ((IndirectlyContains (loc, Object_11)) && 
+        (Object_5 has worn) && 
+        (QuillFlags->18 == 0))
+    {
+        ! PAPER 38;
+        remove ;
+    }
+    if ((QuillFlags->17 ~= 0) && 
+        (~IndirectlyContains (loc, Object_9)))
+    {
+        ! PAPER 33;
+        <Take Object_9>;
+        QuillFlagSet(17,255);
+        LookSub(0); rtrue;
+        rtrue;
+    }
+    if ((QuillFlags->17 == 3))
+    {
+        ! PAPER 36;
+        print "You have taken ", turns; if (turns > 1) print "s"; print ".";
+        quit;
+    }
+    if ((QuillFlags->17 == 2))
+    {
+        ! PAPER 35;
+        QuillFlagSet(17,255);
+        quit;
+    }
+    if ((QuillFlags->17 == 1))
+    {
+        ! PAPER 34;
+        QuillFlagSet(17,255);
+        print "You don't really mean that, do you?"; if (YesOrNo() == 0) rtrue;
+    }
+    if ((loc == Room_29) && 
+        (IndirectlyContains (loc, Object_9)) && 
+        (QuillFlags->17 == 0))
+    {
+        ! PAPER 32;
+        QuillFlagSet(17,255);
+        LookSub(0); rtrue;
+    }
+    if ((loc == Room_25) && 
+        (~IndirectlyContains (player, Object_13)) && 
+        (random(100) < 18))
+    {
+        ! PAPER 48;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (~IndirectlyContains (player, Object_13)) && 
+        (random(100) < 21))
+    {
+        ! PAPER 49;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (~IndirectlyContains (player, Object_13)) && 
+        (random(100) < 26))
+    {
+        ! PAPER 50;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (~IndirectlyContains (player, Object_13)) && 
+        (random(100) < 34))
+    {
+        ! PAPER 51;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (~IndirectlyContains (player, Object_13)) && 
+        (random(100) < 51))
+    {
+        ! PAPER 52;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (IndirectlyContains (player, Object_13)) && 
+        (random(100) < 18))
+    {
+        ! PAPER 64;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (IndirectlyContains (player, Object_13)) && 
+        (random(100) < 21))
+    {
+        ! PAPER 65;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (IndirectlyContains (player, Object_13)) && 
+        (random(100) < 26))
+    {
+        ! PAPER 66;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (IndirectlyContains (player, Object_13)) && 
+        (random(100) < 34))
+    {
+        ! PAPER 67;
+        rtrue;
+    }
+    if ((loc == Room_25) && 
+        (IndirectlyContains (player, Object_13)) && 
+        (random(100) < 51))
+    {
+        ! PAPER 68;
+        rtrue;
+    }
+    if ((loc == Room_5) && 
+        (~IndirectlyContains (player, Object_13)))
+    {
+        ! PAPER 62;
+        <Take Object_13>;
+        ! BORDER 13;
+        rtrue;
+    }
+    if ((loc == Room_41) && 
+        (QuillFlags->22 == 0))
+    {
+        ! PAPER 81;
+        QuillFlagSet(22,255);
+        LookSub(0); rtrue;
+        rtrue;
+    }
+    if ((loc == Room_41) && 
+        (QuillFlags->22 == 1))
+    {
+        ! PAPER 82;
+        QuillFlagSet(22,255);
+        print "You don't really mean that, do you?"; if (YesOrNo() == 0) rtrue;
+        rtrue;
+    }
+    if ((loc == Room_41) && 
+        (QuillFlags->22 == 3))
+    {
+        ! PAPER 86;
+        ! PAPER 82;
+        QuillFlagSet(22,255);
+        print "You don't really mean that, do you?"; if (YesOrNo() == 0) rtrue;
+        rtrue;
+    }
+    if ((loc == Room_41) && 
+        (QuillFlags->22 == 2))
+    {
+        ! PAPER 83;
+        QuillFlagSet(22,255);
+        quit;
+        rtrue;
+    }
+    if ((loc == Room_44) && 
+        (QuillFlags->23 == 0))
+    {
+        ! PAPER 89;
+        ! PAPER 90;
+        remove ;
+        move  to loc;
+        <Wear Object_15>;
+                rtrue;
+    }
+    if ((loc == Room_44) && 
+        (QuillFlags->24 == 0) && 
+        (IndirectlyContains (loc, Object_8)) && 
+        (~IndirectlyContains (player, Object_8)) && 
+        (IndirectlyContains (loc, )))
+    {
+        ! PAPER 94;
+        <Remove >;
+        <Take >;
+        remove ;
+        rtrue;
+    }
+    if ((loc == Room_45) && 
+        (QuillFlags->25 == 0) && 
+        (random(100) < 21))
+    {
+        ! PAPER 99;
+    }
+    if ((loc == Room_45) && 
+        (QuillFlags->25 == 0) && 
+        (random(100) < 11))
+    {
+        ! PAPER 100;
+        print "More..."; @read_char 1 tmp; print "^";
+        QuillPause(46);
+        LookSub(0); rtrue;
+    }
+    if ((loc == Room_51) && 
+        (QuillFlags->26 == 0) && 
+        (~IndirectlyContains (player, )) && 
+        (random(100) < 21))
+    {
+        ! PAPER 106;
+        rtrue;
+    }
+    if ((loc == Room_51) && 
+        (QuillFlags->26 == 0) && 
+        (IndirectlyContains (player, )) && 
+        (random(100) < 21))
+    {
+        ! PAPER 107;
+        <Remove >;
+        <Take >;
+        remove ;
+        rtrue;
+    }
+    rfalse;
+];
+
+
+Object WordObj_синг
+    with name 'синг' ;
+Object WordObj_моос
+    with name 'моос' ;
+Object WordObj_ладд
+    with name 'ладд' ;
+Object WordObj_артх
+    with name 'артх' ;
+Object WordObj_бутт
+    with name 'бутт' ;
+Object WordObj_цоин
+    with name 'цоин' ;
+Object WordObj_споо
+    with name 'споо' ;
+Object WordObj_тицк
+    with name 'тицк' ;
+Object WordObj_сигн
+    with name 'сигн' ;
+Object WordObj_мацх
+    with name 'мацх' ;
+Object WordObj_белл
+    with name 'доор' 'белл' ;
+Object WordObj_дисг
+    with name 'дисг' ;
+Object WordObj_скел
+    with name 'скел' ;
+Object WordObj_аним
+    with name 'аним' ;
+Object WordObj_цлот
+    with name 'цлот' ;
+Object WordObj_цлип
+    with name 'цлип' ;
+Object WordObj_нест
+    with name 'нест' ;
+Object WordObj_трол
+    with name 'трол' ;
+Object WordObj_мап 
+    with name 'мап' ;
+Object WordObj_броц
+    with name 'броц' ;
+Object WordObj_хоус
+    with name 'хоус' ;
+Object WordObj_цард
+    with name 'цард' ;
+Object WordObj_софа
+    with name 'софа' ;
+Object WordObj_деск
+    with name 'деск' ;
+Object WordObj_стат
+    with name 'стат' ;
+Object WordObj_рамб
+    with name 'рамб' ;
+Object WordObj_драг
+    with name 'драг' ;
+Object WordObj_цоок
+    with name 'преб' 'баке' 'цоок' ;
+Object WordObj_ботт
+    with name 'ботт' ;
+Object WordObj_дрин
+    with name 'дрин' ;
+Object WordObj_унде
+    with name 'унде' ;
+Object WordObj_паст
+    with name 'виен' 'паст' ;
+Object WordObj_бабе
+    with name 'фисх' 'бабе' ;
+Object WordObj_хелл
+    with name 'хелл' ;
+Object WordObj_пхон
+    with name 'теле' 'пхон' ;
+Object WordObj_0832
+    with name '0832' ;
+Object WordObj_тхин
+    with name 'тхин' ;
+Object WordObj_ханд
+    with name 'ханд' ;
+Object WordObj_спец
+    with name 'глас' 'спец' ;
+Object WordObj_виза
+    with name 'виза' ;
+Object WordObj_пост
+    with name 'пост' ;
+Object WordObj_бунц
+    with name 'род' 'родс' 'бунц' ;
+Object WordObj_дипл
+    with name 'дипл' ;
+Object WordObj_мага
+    with name 'мага' ;
+Object WordObj_цуп 
+    with name 'теа' 'цуп' ;
+Object WordObj_свит
+    with name 'свит' ;
+Object WordObj_пад 
+    with name 'пад' ;
+Object WordObj_инже
+    with name 'и//' 'инже' ;
+[ нSub ;  ];
+[ нортSub ;  ];
+[ сSub ;  ];
+[ соУтSub ;  ];
+[ еSub ;  ];
+[ еАстSub ;  ];
+[ вSub ;  ];
+[ вЕстSub ;  ];
+[ уSub ;  ];
+[ упSub ;  ];
+[ цлимSub ;  ];
+[ асЦЕSub ;  ];
+[ дSub ;  ];
+[ довнSub ;  ];
+[ дЕсЦSub ;  ];
+[ инSub ;  ];
+[ инсЕSub ;  ];
+[ слидSub ;  ];
+[ гижЕSub ;  ];
+[ сХовSub ;  ];
+[ еьАмSub ;  ];
+[ рЕАдSub ;  ];
+[ опЕнSub ;  ];
+[ прЕсSub ;  ];
+[ пУсХSub ;  ];
+[ кноЦSub ;  ];
+[ гоSub ;  ];
+[ ентЕSub ;  ];
+[ цлосSub ;  ];
+[ сХУтSub ;  ];
+[ хитSub ;  ];
+[ брЕАSub ;  ];
+[ смАсSub ;  ];
+[ киллSub ;  ];
+[ вАитSub ;  ];
+[ дУЦкSub ;  ];
+[ бУЫSub ;  ];
+[ еАтSub ;  ];
+[ цАллSub ;  ];
+[ диАлSub ;  ];
+[ рАисSub ;  ];
+[ вАжЕSub ;  ];
+[ тУрнSub ;  ];
+[ флипSub ;  ];
+[ дипSub ;  ];
+[ соАкSub ;  ];
+[ усЕSub ;  ];
+[ ринГSub ;  ];
+[ фАрмSub ;  ];
+[ пЕАсSub ;  ];
+[ гУАрSub ;  ];
+[ принSub ;  ];
+[ пЕрЦSub ;  ];
+[ мириSub ;  ];
+[ блАЦSub ;  ];
+[ аддЕSub ;  ];
+[ едмУSub ;  ];
+[ гоблSub ;  ];
+[ гномSub ;  ];
+[ тролSub ;  ];
+[ рАмбSub ;  ];
+[ прЕбSub ;  ];
+[ бАкЕSub ;  ];
+[ цоокSub ;  ];
+[ дринSub ;  ];
+[ тХинSub ;  ];
+[ гЕтSub ;  ];
+[ тАкЕSub ;  ];
+[ дропSub ;  ];
+[ рЕмоSub ;  ];
+[ вЕАрSub ;  ];
+[ иSub ;  ];
+[ инжЕSub ;  ];
+[ лSub ;  ];
+[ лоокSub ;  ];
+[ яУитSub ;  ];
+[ стопSub ;  ];
+[ сАжЕSub ;  ];
+[ лоАдSub ;  ];
+Verb 'н' 'норт' * -> норт;
+Verb 'с' 'соУт' * -> соУт;
+Verb 'е' 'еАст' * -> еАст;
+Verb 'в' 'вЕст' * -> вЕст;
+Verb 'у' 'уп' 'цлим' 'асЦЕ' * -> асЦЕ;
+Verb 'д' 'довн' 'дЕсЦ' * -> дЕсЦ;
+Verb 'ин' * -> ин;
+Verb 'инсЕ' 'слид' * -> слид;
+Verb 'гижЕ' 'сХов' * -> сХов;
+Verb 'еьАм' 'рЕАд' * -> рЕАд;
+Verb 'опЕн' * -> опЕн;
+Verb 'прЕс' 'пУсХ' * -> пУсХ;
+Verb 'кноЦ' * -> кноЦ;
+Verb 'го' 'ентЕ' * -> ентЕ;
+Verb 'цлос' 'сХУт' * -> сХУт;
+Verb 'хит' 'брЕА' 'смАс' 'килл' * -> килл;
+Verb 'вАит' * -> вАит;
+Verb 'дУЦк' * -> дУЦк;
+Verb 'бУЫ' * -> бУЫ;
+Verb 'еАт' * -> еАт;
+Verb 'цАлл' 'диАл' * -> диАл;
+Verb 'рАис' * -> рАис;
+Verb 'вАжЕ' * -> вАжЕ;
+Verb 'тУрн' 'флип' * -> флип;
+Verb 'дип' 'соАк' * -> соАк;
+Verb 'усЕ' 'ринГ' * -> ринГ;
+Verb 'фАрм' 'пЕАс' * -> пЕАс;
+Verb 'гУАр' * -> гУАр;
+Verb 'прин' * -> прин;
+Verb 'пЕрЦ' * -> пЕрЦ;
+Verb 'мири' * -> мири;
+Verb 'блАЦ' 'аддЕ' 'едмУ' * -> едмУ;
+Verb 'гобл' * -> гобл;
+Verb 'гном' * -> гном;
+Verb 'трол' * -> трол;
+Verb 'рАмб' * -> рАмб;
+Verb 'прЕб' 'бАкЕ' 'цоок' * -> цоок;
+Verb 'дрин' * -> дрин;
+Verb 'тХин' * -> тХин;
+Verb 'гЕт' 'тАкЕ' * -> тАкЕ;
+Verb 'дроп' * -> дроп;
+Verb 'рЕмо' * -> рЕмо;
+Verb 'вЕАр' * -> вЕАр;
+Verb 'и' 'инжЕ' * -> инжЕ;
+Verb 'л' 'лоок' * -> лоок;
+Verb 'яУит' 'стоп' * -> стоп;
+Verb 'сАжЕ' * -> сАжЕ;
+Verb 'лоАд' * -> лоАд;
+
+
+Include "VerbLib";
+Include "Grammar";
+
+[ Initialise ; 
+
+  location = Room_0;    ! Always starts in room 0
+  player = QuillPlayer; ! For various reasons
+  StartDaemon(QuillPlayer); 
+  QuillProcess(); 
+  lookmode = 2;         ! Quill always prints the description
+  notify_mode = 0;      ! Quill doesn't notify
+];
+

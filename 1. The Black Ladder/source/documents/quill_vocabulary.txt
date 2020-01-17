@@ -1,0 +1,116 @@
+Quill vocabulary
+================
+Verbs:
+    UNLOCK
+    INSERT, SLIDE
+    GIVE, SHOW
+    EXAMINE, READ
+    OPEN
+    PRESS, PUSH
+    KNOCK
+    GO, ENTER
+    CLOSE, SHUT
+    HIT, BREAK, SMASH, KILL
+    WAIT
+    DUCK
+    BUY
+    EAT
+    CALL, DIAL
+    RAISE
+    WAVE
+    TURN, FLIP
+
+    SING
+    DIP, SOAK
+    USE, RING
+    GET, TAKE
+    DROP
+    REMOVE
+    WEAR
+    I, INVENTORY
+    L, LOOK
+    QUIT, STOP
+    SAVE
+    LOAD
+
+Directions:
+    N, NORTH
+    S, SOUTH
+    E, EAST
+    W, WEST
+    NE
+    NW
+    SE
+    SW
+    U, UP, CLIMB, ASCEND
+    D, DOWN, DESCEND
+    IN
+
+Nouns:
+    FARM, PEASANT
+    GUARD
+    PRINCE
+    MOOSE
+    PERCY
+    MIRIAM
+    LADDER
+    BLACK, ADDER, EDMUND
+    GOBLIN
+    GNOME
+    ARTHUR
+    BUTTON
+    TRAP
+    COIN
+    SPOON
+    TICKET
+    SIGN
+    TREE
+    MACHINE
+    DOOR, BELL
+    KEYHOLE
+    KEY
+    DISGUISE
+    SKELETON
+    ANIMAL
+    CLOTH
+    CLIP
+    NEST
+    TROLL
+    MAP
+    BROCHURE
+    HOUSE
+    CARD
+    SOFA
+    DESK
+    STATUETTE
+    RAMBO
+    DRAGON
+    PREBEN, BAKER,COOK
+    BOTTLE
+    DRINK
+    TABLE
+    UNDER
+    WIENERBR0D, PASTRY
+    FISH, BABEL
+    HELLO
+    TELEPHONE, PHONE
+    083214693
+    THING-FISH
+    HAND
+    MIDGET
+    GLASSES, SPECTACLES
+    WIZARD
+    POSTER
+    ROD, RODS, BUNCH
+    DIPLOMA
+    MAGAZINE
+    BRIDGE
+    TEA, CUP
+    SWITCH
+    PAD
+     *
+
+
+
+
+ 

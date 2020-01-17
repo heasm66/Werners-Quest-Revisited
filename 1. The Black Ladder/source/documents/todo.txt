@@ -1,0 +1,76 @@
+CHANGES IN ZILLIB
+=============================================
+- Changed all <insert-file ...> in parser to <insert-file "zillib/..."
+
+BUGS
+=============================================
+* OK: Change "..." in parser to "Huh?"
+* OK: Change "Thanks for playing" to "Who cares?"
+* OK: Add #turns in <JIGS-UP>
+* OK: Change "You have died" to "END OF GAME"
+* OK:Default to Troll when "give ticket"
+* OK: Give should give a better message when there is a person (PERSONBIT)
+* OK: "give midget glasses" should work the same as "give glasses to midget" (V-SGIVE)
+* OK: "give glasses to hello"
+* OK: REPLACE-DEFINITION på PARSE-NUMBER that don't return RFALSE when overflow but an number (-32768?) instead
+* OK:"remove disguise" doesn't work
+* OK: Thing-Fishs explanation how hand-raising buiseness works doesn't appear
+* OK: "read diploma" doesn't work
+* OK: Diploma should have fixed font
+* OK: "flip switch" doesn't work
+* OK: "wave hands" has wrong message
+* OK: You can examine DRINK and TICKET before you bought it.
+* OK: Limit carry capacity to 10 objects.
+* OK: Two CR when Preben & Preben don't talk.
+* OK: Remove CR on 23, 30, 36, 39, 85, 98, 133, 140
+* OK: Check that JIGS-UP prints correctly.
+* OK: "You see nothing special about xxx."
+* OK: Gandalf, Thorin - "You pick up the xxx" instead of "OK."
+* OK: Move PARSER to post_parser_ext
+* OK: "x s" gives strange message.
+* OK: Change name of pre_parser_ext and post_parser_ext
+* OK: Remove XYZZY
+* OK: Implement scoring
+* OK: Implement New/Classic mode
+* OK: Implement INSTRUCTIONS
+* OK: Print description when troll shows you to Dungeon Lobby
+* OK: NEW/MODE --> MODERN/CLASSIC
+* OK: INFO --> ABOUT
+
+* OK: Make version that don't kill player all the time (CLASSIC)
+    CLASSIC:    You can't leave dungeon and reenter (Troll won't let you in)
+                If you "drink drink" the game becomes unsolvable.
+                if you "give te to Arthur" the game becomes unsolvalble.
+                "Miriam, sing" before the Evil Prince is dead makes the game unsolvable.
+                "give pastry to prince" before it is soaked in cologne makes the game unsolvable.
+                Killing Rambo without him killing dragon first makes the game unsolvable.
+                Breaking somthing in game kills you instantly.
+                Entering Maze without phone makes the game unsolvable.
+                Wearing the spectacles kills you instantly.
+                Giving to spectacles to the midget makes the game unsolvable.
+    NEW:        OK: Troll recognize that ticket is already paid
+                OK: Troll only kill you when you try to move around in darkness
+                OK: First time you try breaking something. The Troll issues only a warning.
+                OK: Wearing the spectacles only kills you when you try to move.
+                OK: If you given tea to Arthur the machine can produce a new cup.
+                SCORE:  OK: Enter Dungeon
+                        OK: Get Pastry
+                        OK: Get Tea
+                        OK: Kill Dragon
+                        OK: Kill Evil Prince
+                        OK: Enter Lawn
+                        OK: Enter House
+                        OK: Escape Maze
+                        OK: Get Ladder
+                        OK: Enter Lab-mo-torium
+* OK: Add SCORE for Revisted version
+
+* Add CREDITS
+* InvisiClues
+* Change Extension to same as in WQ2-
+
+
+
+
+
+ 

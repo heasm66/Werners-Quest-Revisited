@@ -1,0 +1,56 @@
+CHANGES IN ZILLIB
+=============================================
+- Changed all <insert-file ...> in parser to <insert-file "zillib/..."
+
+BUGS
+=============================================
+* OK: ROOMS         - Rooms 0-50
+* OK: MESSAGES      - Message 0-115
+* OK: OBJECTS       - Objects 0-36
+* OK: SYSMESSAGES   - MESSAGE 1-34
+* OK: HIT THING-FISH
+* OK: GET BAG
+* OK: WEAR/UNWEAR BAG
+* OK: ENTER FARMHOUSE
+* OK: MOVE SPOON WHEN THING-FISH IS NEAR
+* OK: PRESS 1-8
+* OK: SEARCH FOR ZX SPECTRUM
+* OK: EXAMINE DOORS
+* OK: CHANGE CHANNEL ON TV
+* OK: TOUCH TV
+* OK: RETURN FROM RAVINE
+* OK: DOWN WELL
+* OK: BUY DRINK
+* OK: GIVE DRINK
+* OK: PREBEN, TOOLSHED
+* OK: HELLO TAYLOR
+* OK: ROYAL PUZZLE
+* OK: SAW FLOOR, TOUCH STAMP
+* OK: EAT SALAMI,PASTRY. GET BOTTLES. PREBEN INTERRUPT
+* OK: Score
+* OK: The Chrome-Spoon list with lowercase in inventory.
+* OK: WEAR BAG x 2 = wrong message. GET BAG = (worn)?
+* OK: MODERN: If you go down well before taking blanket, leave blanket in Old Farm.
+* OK: Press button in elevator defaults to cerise button, should ask wich button.
+* OK: Press button in Royal Puzzle defaults to red game button, should ask wich button.
+* OK: INFO ==> ABOUT, WQ1-3
+* OK: MODE ==> MODERN, CLASSIC in WQ1-3
+* OK: Remove DEBUG
+* OK: InvisiClues
+* OK: Frank Zappa and other:
+	Thing-Fish
+	Rance
+	Chrome spoon
+	Where can I go...
+	Preben & Preben
+	Bruce Springsteen
+	Duran Duran
+	Infocom
+	
+	
+
+
+
+
+
+ 

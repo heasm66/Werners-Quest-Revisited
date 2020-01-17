@@ -1,0 +1,99 @@
+Quill vocabulary
+================
+Verbs:
+    GET, TAKE
+    DROP
+    REMOVE
+    WEAR
+    I, INVENTORY
+    L, LOOK
+    QUIT, STOP
+    SAVE
+    LOAD
+    INSERT
+    EXAMINE, READ, SEARCH
+    OPEN
+    CLOSE, SHUT
+    COVER
+    HIT, BEAT, ATTACK, KILL, STRIKE
+    HELLO
+    PRESS, PUSH
+    TOUCH
+    WAIT
+    GIVE
+    BUY
+    WAKE
+    START, CONNECT
+    KISS
+    HANG
+    EAT
+    SWIM, BATH
+    PULL
+
+Directions:
+    N, NORTH
+    S, SOUTH
+    E, EAST
+    W, WEST
+    NE
+    NW
+    SE
+    SW
+    U, UP, CLIMB, ASCEND
+    D, DOWN, DESCEND
+    IN, ENTER
+    OUT 
+
+Nouns:
+    ROCK
+    SPOON
+    GNOME
+    SPECTRUM
+    THING-FISH, PERSON
+    BAG
+    BASKETBALL, BALL
+    CLOTHLINE, LINE
+    BLANKET
+    LADDER
+    SAW
+    MAN
+    BRUCE, SPRINGSTEEN
+    COIN
+    DRINK
+    DOOR
+    PHILATELIST'S, STONE
+    BOOK
+    STAMP
+    SALAMI, SAUSAGE
+    PRINTOUT
+    PASTRY
+    ALBUM
+    TAYLOR, JOHN
+    BOAT, YACHT
+    DEVICE
+    TOAD
+    TV, SCREEN
+    ROT, FLOOR, ROOTS, DECAY, PLANK
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    BOTTLE
+    RED, BUTTON, GAME
+    GREEN, DEMO
+    CERISE
+    OCHRE
+    PURPLE
+    LEVER
+    WALL
+    *
+
+
+
+
+
+ 

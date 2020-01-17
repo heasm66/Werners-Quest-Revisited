@@ -1,0 +1,46 @@
+Quill commands
+==============
+ANYKEY          Print "More..." and wait for keystroke
+AT      X       Player at location X
+ATGT    X       Location > X (room number)
+ATLT    X       Location < X (room number)
+ABSENT  X       Object X is not in room
+CARRIED X       Object X carried by player
+CHANSE  X       Action has X probabilty to happen
+CLEAR   X       Flag X sets to false
+CLS             Clear screen
+CREATE  X       Creates object X and move it to current location
+DESC            Print room-description
+DESTROY X       Remove object X from game
+DONE            Return
+DROP    X       Move object X from players inventory to location
+END             End game
+EQ      X   Y   Flag X = Y
+GET     X       Move object X to players inventory
+GOTO    X       Move player to location X
+INVEN           Print inventory
+LET     X   Y   Set Flag X = Y, FLAG <= 10 DECREASES BY ONE FOR EVERY TURN UNTIL 0
+LOAD
+LT      X   Y   Flag X < Y
+MESSAGE X       Print message X
+NOTCARR X       Object X not carried by player
+NOTWORN X       Object X not worn by player
+NOTZERO X       Flag X <> 0
+PLUS    X   Y   Add Y to flag X
+PRESENT X       Object X is in room
+QUIT
+REMOVE  X       Take off object X
+SAVE
+SET     X       Flag X sets to true
+SWAP    X   Y   Switch place between object X and Y
+TURNS           Print number of turns
+WEAR    X       Wear object X
+WORN    X       Object X is worn by player
+ZERO    X       Flag X = 0
+
+
+
+
+
+
+ 
