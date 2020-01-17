@@ -1,0 +1,16 @@
+CHANGES IN ZILLIB
+=============================================
+- Changed all <insert-file ...> in parser to <insert-file "zillib/..."
+
+BUGS
+=============================================
+* ROOMS         - Rooms
+* MESSAGES      - Message
+* OBJECTS       - Objects
+* SYSMESSAGES   - MESSAGE
+
+
+
+
+
+ 
