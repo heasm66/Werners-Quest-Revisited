@@ -71,10 +71,10 @@ hint now, indicate HINT.]" CR>
 	<NEW-CURSOR>
 	<REPEAT ()
 		<SET CHR <INPUT 1>>
-		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q>>
+		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q> %131>
 		       <SET Q T>
 		       <RETURN>)
-		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n>>
+		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n> %130>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,CHAPT-NUM .MAXC>
 			      <SETG CUR-POS 0>
@@ -85,7 +85,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CHAPT-NUM <+ ,CHAPT-NUM 1>>
 			      <SETG QUEST-NUM 1>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p>>
+		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p> %129>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,CHAPT-NUM 1>
 			      <SETG CHAPT-NUM .MAXC>
@@ -96,7 +96,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CHAPT-NUM <- ,CHAPT-NUM 1>>
 			      <SETG QUEST-NUM 1>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR 13 10>
+		      (<EQUAL? .CHR 13 10 %132>
 		       <PICK-QUESTION>
 		       <RETURN>)>>
 	<COND (<NOT .Q>
@@ -118,10 +118,10 @@ hint now, indicate HINT.]" CR>
 	<NEW-CURSOR>
 	<REPEAT ()
 		<SET CHR <INPUT 1>>
-		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q>>
+		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q> %131>
 		       <SET Q T>
 		       <RETURN>)
-		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n>>
+		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n> %130>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,QUEST-NUM .MAXQ>
 			      <SETG CUR-POS 0>
@@ -130,7 +130,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CUR-POS <+ ,CUR-POS 1>>
 			      <SETG QUEST-NUM <+ ,QUEST-NUM 1>>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p>>
+		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p> %129>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,QUEST-NUM 1>
 			      <SETG QUEST-NUM .MAXQ>
@@ -139,7 +139,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CUR-POS <- ,CUR-POS 1>> 
 			      <SETG QUEST-NUM <- ,QUEST-NUM 1>>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR 13 10>
+		      (<EQUAL? .CHR 13 10 %132>
 		       <DISPLAY-HINT>
 		       <RETURN>)>>
 	<COND (<NOT .Q>
@@ -223,7 +223,7 @@ the cursor and text"
 		     <TELL "-> ">
 		     <SET FLG <>>)>
 	      <SET CHR <INPUT 1>>
-	      <COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q>>
+	      <COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q> %131>
 		     <PUT .H 1 .CNT>
 		     <RETURN>)
 		    (<EQUAL? .CHR 13 10>

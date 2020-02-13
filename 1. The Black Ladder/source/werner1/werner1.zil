@@ -7,10 +7,11 @@
            4 20191219: Spelling.
            5 20200108: Bugs
            6 20200109: Hints to lowercase
+           7 20200213: Arrowkeys in hints
 "
 
 <VERSION XZIP>
-<CONSTANT RELEASEID 6>
+<CONSTANT RELEASEID 7>
 
 <SETG EXTRA-FLAGS
     (

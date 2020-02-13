@@ -71,10 +71,10 @@ hint now, indicate HINT.]" CR>
 	<NEW-CURSOR>
 	<REPEAT ()
 		<SET CHR <INPUT 1>>
-		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q>>
+		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q> %131>
 		       <SET Q T>
 		       <RETURN>)
-		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n>>
+		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n> %130>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,CHAPT-NUM .MAXC>
 			      <SETG CUR-POS 0>
@@ -85,7 +85,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CHAPT-NUM <+ ,CHAPT-NUM 1>>
 			      <SETG QUEST-NUM 1>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p>>
+		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p> %129>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,CHAPT-NUM 1>
 			      <SETG CHAPT-NUM .MAXC>
@@ -96,7 +96,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CHAPT-NUM <- ,CHAPT-NUM 1>>
 			      <SETG QUEST-NUM 1>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR 13 10>
+		      (<EQUAL? .CHR 13 10 %132>
 		       <PICK-QUESTION>
 		       <RETURN>)>>
 	<COND (<NOT .Q>
@@ -118,10 +118,10 @@ hint now, indicate HINT.]" CR>
 	<NEW-CURSOR>
 	<REPEAT ()
 		<SET CHR <INPUT 1>>
-		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q>>
+		<COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q> %131>
 		       <SET Q T>
 		       <RETURN>)
-		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n>>
+		      (<EQUAL? .CHR %<ASCII !\N> %<ASCII !\n> %130>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,QUEST-NUM .MAXQ>
 			      <SETG CUR-POS 0>
@@ -130,7 +130,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CUR-POS <+ ,CUR-POS 1>>
 			      <SETG QUEST-NUM <+ ,QUEST-NUM 1>>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p>>
+		      (<EQUAL? .CHR %<ASCII !\P> %<ASCII !\p> %129>
 		       <ERASE-CURSOR>
 		       <COND (<EQUAL? ,QUEST-NUM 1>
 			      <SETG QUEST-NUM .MAXQ>
@@ -139,7 +139,7 @@ hint now, indicate HINT.]" CR>
 			      <SETG CUR-POS <- ,CUR-POS 1>> 
 			      <SETG QUEST-NUM <- ,QUEST-NUM 1>>)>
 		       <NEW-CURSOR>)
-		      (<EQUAL? .CHR 13 10>
+		      (<EQUAL? .CHR 13 10 %132>
 		       <DISPLAY-HINT>
 		       <RETURN>)>>
 	<COND (<NOT .Q>
@@ -223,7 +223,7 @@ the cursor and text"
 		     <TELL "-> ">
 		     <SET FLG <>>)>
 	      <SET CHR <INPUT 1>>
-	      <COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q>>
+	      <COND (<EQUAL? .CHR %<ASCII !\Q> %<ASCII !\q> %131>
 		     <PUT .H 1 .CNT>
 		     <RETURN>)
 		    (<EQUAL? .CHR 13 10>
@@ -347,7 +347,7 @@ the cursor and text"
     		"Picnic Spot"
 	  			"Have you examined the rubish bin?"
 	  			"Read the newspaper. There's an article about you."
-	  			"PIck up the newspaper. You will need it later on.">
+	  			"Pick up the newspaper. You will need it later on.">
 	 		<LTABLE 3
     		"Inside Farmhouse"
 	  			"Examine everything."
@@ -367,7 +367,7 @@ the cursor and text"
 	  		"Bare Tower Room"
 	  			"Don't much here to see."
 	  			"Yoiu can always look at the High School."
-				"If you have the binoculars you'll be albe to see better.">
+				"If you have the binoculars you'll be able to see better.">
 	 		<LTABLE 3
 	  		"Library"
 	  			"It's a very small library."
@@ -403,7 +403,23 @@ the cursor and text"
 				"It'll break the piggy bank."
 	  			"But to do that you'll need to speed it up."
 	  			"It runs on petrol."
-	  			"DROP PIGGY BANK. POUR PETROL IN MACHINE.">>
+	  			"DROP PIGGY BANK. POUR PETROL IN MACHINE.">
+			<LTABLE 3
+	  		"Kitchen"
+	  			"Have you seen the cupboard?"
+	  			"Just open it."
+	  			"Ok. You need to feed the grue. There's info about how to do that in the living room hints."
+				"And don't forget to open the cupboard again after the feeding (grues are a bit absentminded).">
+			<LTABLE 3
+	  		"Living Room"
+	  			"Have you seen what is on the TV?"
+	  			"If there only was a way to summon him here."
+				"You'll need the tuborg spell."
+	  			"It's a shame that he is of no use in his intoxicated state."
+				"You'll need the brenwyn spell."
+				"TUBORG FAN. BRENWYN FAN." 
+				"Ok. Now he's a bit more sober and will follow you around."
+				"Just have him follow you to the kitchen and then feed him to the grue.">>
       	<PLTABLE
        	"Courtyard"
          	<LTABLE 3

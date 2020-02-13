@@ -3,8 +3,8 @@
         .FSTR FSTR?1," the "		; 406x, saved 1213
         .FSTR FSTR?2,"You "		; 147x, saved 436
         .FSTR FSTR?3," you"		; 176x, saved 348
-        .FSTR FSTR?4," and "		; 108x, saved 319
-        .FSTR FSTR?5,"The "		; 108x, saved 319
+        .FSTR FSTR?4,"The "		; 108x, saved 319
+        .FSTR FSTR?5," and "		; 108x, saved 319
         .FSTR FSTR?6,", "		; 274x, saved 271
         .FSTR FSTR?7,"Thing-Fish"		; 24x, saved 251
         .FSTR FSTR?8," is "		; 125x, saved 246
@@ -19,8 +19,8 @@
         .FSTR FSTR?17,"Oddly-Angled "		; 10x, saved 124
         .FSTR FSTR?18,"thing"		; 43x, saved 124
         .FSTR FSTR?19," a "		; 123x, saved 120
-        .FSTR FSTR?20," diamond-shaped "		; 9x, saved 118
-        .FSTR FSTR?21,"which"		; 41x, saved 118
+        .FSTR FSTR?20,"which"		; 41x, saved 118
+        .FSTR FSTR?21," diamond-shaped "		; 9x, saved 118
         .FSTR FSTR?22,"Werner's "		; 14x, saved 115
         .FSTR FSTR?23,"are"		; 112x, saved 109
         .FSTR FSTR?24,"oddly-angled"		; 11x, saved 108
@@ -33,70 +33,70 @@
         .FSTR FSTR?31," in"		; 86x, saved 83
         .FSTR FSTR?32," passage"		; 15x, saved 82
         .FSTR FSTR?33,"his "		; 41x, saved 78
-        .FSTR FSTR?34,"the"		; 80x, saved 77
-        .FSTR FSTR?35,"and"		; 80x, saved 77
-        .FSTR FSTR?36,"already "		; 14x, saved 76
+        .FSTR FSTR?34,"and"		; 80x, saved 77
+        .FSTR FSTR?35,"the"		; 80x, saved 77
+        .FSTR FSTR?36," have"		; 27x, saved 76
         .FSTR FSTR?37," number"		; 16x, saved 73
         .FSTR FSTR?38," from"		; 26x, saved 73
-        .FSTR FSTR?39,"have"		; 37x, saved 70
-        .FSTR FSTR?40," on"		; 73x, saved 70
+        .FSTR FSTR?39," on"		; 75x, saved 72
+        .FSTR FSTR?40,"read"		; 36x, saved 68
         .FSTR FSTR?41," carrying"		; 11x, saved 68
         .FSTR FSTR?42," some"		; 24x, saved 67
         .FSTR FSTR?43,"It's"		; 18x, saved 66
-        .FSTR FSTR?44,"arrow"		; 23x, saved 64
-        .FSTR FSTR?45,"That"		; 23x, saved 64
-        .FSTR FSTR?46,"Dungeon"		; 12x, saved 64
+        .FSTR FSTR?44,"That"		; 23x, saved 64
+        .FSTR FSTR?45,"Dungeon"		; 12x, saved 64
+        .FSTR FSTR?46,"arrow"		; 23x, saved 64
         .FSTR FSTR?47,"can't "		; 14x, saved 63
-        .FSTR FSTR?48," be"		; 64x, saved 61
-        .FSTR FSTR?49,"You'll "		; 10x, saved 61
-        .FSTR FSTR?50," no"		; 64x, saved 61
-        .FSTR FSTR?51," for"		; 32x, saved 60
-        .FSTR FSTR?52," it"		; 62x, saved 59
-        .FSTR FSTR?53,"out"		; 61x, saved 58
-        .FSTR FSTR?54,"enter"		; 21x, saved 58
+        .FSTR FSTR?48," no"		; 65x, saved 62
+        .FSTR FSTR?49," be"		; 64x, saved 61
+        .FSTR FSTR?50," for"		; 32x, saved 60
+        .FSTR FSTR?51," it"		; 62x, saved 59
+        .FSTR FSTR?52,"out"		; 61x, saved 58
+        .FSTR FSTR?53,"enter"		; 21x, saved 58
+        .FSTR FSTR?54," lead"		; 21x, saved 58
         .FSTR FSTR?55,"Auto-Knotting "		; 5x, saved 58
-        .FSTR FSTR?56," lead"		; 21x, saved 58
-        .FSTR FSTR?57,"appear"		; 15x, saved 54
-        .FSTR FSTR?58,"Suddenly"		; 9x, saved 54
-        .FSTR FSTR?59," do"		; 57x, saved 54
-        .FSTR FSTR?60,"large"		; 19x, saved 52
-        .FSTR FSTR?61," of"		; 55x, saved 52
-        .FSTR FSTR?62,"description"		; 7x, saved 52
+        .FSTR FSTR?56," do"		; 57x, saved 54
+        .FSTR FSTR?57,"Suddenly"		; 9x, saved 54
+        .FSTR FSTR?58," of"		; 57x, saved 54
+        .FSTR FSTR?59,"appear"		; 15x, saved 54
+        .FSTR FSTR?60,"You'll"		; 10x, saved 52
+        .FSTR FSTR?61,"description"		; 7x, saved 52
+        .FSTR FSTR?62,"large"		; 19x, saved 52
         .FSTR FSTR?63,"He"		; 54x, saved 51
         .FSTR FSTR?64,"cushion"		; 11x, saved 48
         .FSTR FSTR?65," to"		; 50x, saved 47
         .FSTR FSTR?66,"Adventure"		; 7x, saved 46
         .FSTR FSTR?67,"!"""		; 25x, saved 46
-        .FSTR FSTR?68," read"		; 17x, saved 46
-        .FSTR FSTR?69,"over"		; 23x, saved 42
-        .FSTR FSTR?70,"Quest"		; 12x, saved 42
+        .FSTR FSTR?68,"Quest"		; 12x, saved 42
+        .FSTR FSTR?69,"muffin"		; 12x, saved 42
+        .FSTR FSTR?70,"over"		; 23x, saved 42
         .FSTR FSTR?71,"west"		; 23x, saved 42
-        .FSTR FSTR?72,"muffin"		; 12x, saved 42
-        .FSTR FSTR?73," objects"		; 8x, saved 40
-        .FSTR FSTR?74," Austin"		; 8x, saved 40
-        .FSTR FSTR?75,"What"		; 15x, saved 40
-        .FSTR FSTR?76,"Lamberth"		; 7x, saved 40
-        .FSTR FSTR?77,"direct"		; 11x, saved 38
+        .FSTR FSTR?72,"What"		; 15x, saved 40
+        .FSTR FSTR?73,"Lamberth"		; 7x, saved 40
+        .FSTR FSTR?74," objects"		; 8x, saved 40
+        .FSTR FSTR?75," Austin"		; 8x, saved 40
+        .FSTR FSTR?76,"see"		; 41x, saved 38
+        .FSTR FSTR?77," very "		; 11x, saved 38
         .FSTR FSTR?78,"ceiling"		; 9x, saved 38
-        .FSTR FSTR?79,": "		; 41x, saved 38
-        .FSTR FSTR?80,"Werner"		; 9x, saved 38
-        .FSTR FSTR?81,"wearing"		; 9x, saved 38
-        .FSTR FSTR?82," very "		; 11x, saved 38
-        .FSTR FSTR?83,"see"		; 41x, saved 38
-        .FSTR FSTR?84,"floor"		; 14x, saved 37
-        .FSTR FSTR?85,"rope"		; 20x, saved 36
+        .FSTR FSTR?79,"direct"		; 11x, saved 38
+        .FSTR FSTR?80,"wearing"		; 9x, saved 38
+        .FSTR FSTR?81,": "		; 41x, saved 38
+        .FSTR FSTR?82,"Werner"		; 9x, saved 38
+        .FSTR FSTR?83,"floor"		; 14x, saved 37
+        .FSTR FSTR?84,"rope"		; 20x, saved 36
+        .FSTR FSTR?85," de"		; 38x, saved 35
         .FSTR FSTR?86,"
  "		; 38x, saved 35
-        .FSTR FSTR?87," de"		; 38x, saved 35
-        .FSTR FSTR?88,"Rance"		; 10x, saved 34
-        .FSTR FSTR?89," like"		; 13x, saved 34
-        .FSTR FSTR?90,"You're"		; 7x, saved 34
-        .FSTR FSTR?91,"magnifying "		; 5x, saved 34
-        .FSTR FSTR?92,"transistor "		; 5x, saved 34
-        .FSTR FSTR?93," 10 "		; 10x, saved 34
-        .FSTR FSTR?94,"exit"		; 19x, saved 34
-        .FSTR FSTR?95," mode"		; 13x, saved 34
-        .FSTR FSTR?96,"spoon"		; 13x, saved 34
+        .FSTR FSTR?87," mode"		; 13x, saved 34
+        .FSTR FSTR?88,"magnifying "		; 5x, saved 34
+        .FSTR FSTR?89,"exit"		; 19x, saved 34
+        .FSTR FSTR?90," 10 "		; 10x, saved 34
+        .FSTR FSTR?91,"spoon"		; 13x, saved 34
+        .FSTR FSTR?92,"Rance"		; 10x, saved 34
+        .FSTR FSTR?93,"transistor "		; 5x, saved 34
+        .FSTR FSTR?94,"You're"		; 7x, saved 34
+        .FSTR FSTR?95," like"		; 13x, saved 34
+        .FSTR FSTR?96,"holding"		; 8x, saved 33
 WORDS::
         FSTR?1
         FSTR?2

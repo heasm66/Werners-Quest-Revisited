@@ -3,11 +3,12 @@
 ;"Release  1 20191129: First attempt.
   Release  2 20191201: InvisiClues
   Release  3 20200108: Bugs
-           4 20200109: Hints lowercase
+           4 20200109: Hints lowercase 
+           5 20200213: Arrowkeys in hints
 "
 
 <VERSION XZIP>
-<CONSTANT RELEASEID 4>
+<CONSTANT RELEASEID 5>
 
 "Main loop"
 

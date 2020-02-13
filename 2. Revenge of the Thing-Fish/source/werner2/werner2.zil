@@ -6,10 +6,11 @@
            3 20191223: InvisiClues+bugs.
            4 20200108: Bugs
            5 20200109: Hints to lowercase
+           6 20200213: Arrowkeys in hints
 "
 
 <VERSION XZIP>
-<CONSTANT RELEASEID 5>
+<CONSTANT RELEASEID 6>
 
 <SETG EXTRA-FLAGS
     (

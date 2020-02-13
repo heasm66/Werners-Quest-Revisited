@@ -25,78 +25,78 @@
         .FSTR FSTR?23," """		; 107x, saved 104
         .FSTR FSTR?24,".."		; 53x, saved 102
         .FSTR FSTR?25,"here"		; 50x, saved 96
-        .FSTR FSTR?26,"large "		; 25x, saved 94
-        .FSTR FSTR?27," Prince"		; 17x, saved 94
+        .FSTR FSTR?26," Prince"		; 17x, saved 94
+        .FSTR FSTR?27,"large "		; 25x, saved 94
         .FSTR FSTR?28,"dungeon"		; 20x, saved 93
         .FSTR FSTR?29,"number"		; 24x, saved 90
         .FSTR FSTR?30,"Werner's "		; 11x, saved 88
         .FSTR FSTR?31,"enter"		; 28x, saved 79
         .FSTR FSTR?32,"can't "		; 17x, saved 78
-        .FSTR FSTR?33,".
+        .FSTR FSTR?33,"Lab-Mo-Torium"		; 6x, saved 78
+        .FSTR FSTR?34,".
 "		; 41x, saved 78
-        .FSTR FSTR?34,"Lab-Mo-Torium"		; 6x, saved 78
-        .FSTR FSTR?35,"carrying"		; 14x, saved 76
-        .FSTR FSTR?36,"all"		; 79x, saved 76
+        .FSTR FSTR?35,"all"		; 79x, saved 76
+        .FSTR FSTR?36,"carrying"		; 14x, saved 76
         .FSTR FSTR?37,"replies:"		; 12x, saved 75
         .FSTR FSTR?38,"appears"		; 16x, saved 73
         .FSTR FSTR?39,"--"		; 38x, saved 72
-        .FSTR FSTR?40,"Francesco"		; 10x, saved 70
-        .FSTR FSTR?41,"EN"		; 37x, saved 70
-        .FSTR FSTR?42," some"		; 25x, saved 70
-        .FSTR FSTR?43,"hat "		; 37x, saved 70
-        .FSTR FSTR?44,"have"		; 37x, saved 70
+        .FSTR FSTR?40,"hat "		; 37x, saved 70
+        .FSTR FSTR?41," some"		; 25x, saved 70
+        .FSTR FSTR?42,"Francesco"		; 10x, saved 70
+        .FSTR FSTR?43,"have"		; 37x, saved 70
+        .FSTR FSTR?44,"EN"		; 37x, saved 70
         .FSTR FSTR?45,"an "		; 71x, saved 68
-        .FSTR FSTR?46,"You'll "		; 11x, saved 68
-        .FSTR FSTR?47,"machine"		; 15x, saved 68
+        .FSTR FSTR?46,"machine"		; 15x, saved 68
+        .FSTR FSTR?47,"You'll "		; 11x, saved 68
         .FSTR FSTR?48,"his "		; 35x, saved 66
         .FSTR FSTR?49,"dragon"		; 18x, saved 66
         .FSTR FSTR?50,"already "		; 12x, saved 64
-        .FSTR FSTR?51,"Rambo"		; 17x, saved 62
+        .FSTR FSTR?51,"pastry"		; 17x, saved 62
         .FSTR FSTR?52,"door"		; 33x, saved 62
         .FSTR FSTR?53," doesn't "		; 9x, saved 62
-        .FSTR FSTR?54,"pastry"		; 17x, saved 62
-        .FSTR FSTR?55," to"		; 64x, saved 61
-        .FSTR FSTR?56,"remarks:"		; 10x, saved 61
-        .FSTR FSTR?57,"You're "		; 10x, saved 61
+        .FSTR FSTR?54,"Rambo"		; 17x, saved 62
+        .FSTR FSTR?55,"remarks:"		; 10x, saved 61
+        .FSTR FSTR?56,"You're "		; 10x, saved 61
+        .FSTR FSTR?57," to"		; 64x, saved 61
         .FSTR FSTR?58,"and"		; 61x, saved 58
         .FSTR FSTR?59,"north"		; 21x, saved 58
         .FSTR FSTR?60," on"		; 60x, saved 57
         .FSTR FSTR?61,"the"		; 59x, saved 56
-        .FSTR FSTR?62," SURE "		; 8x, saved 54
-        .FSTR FSTR?63,"king"		; 29x, saved 54
+        .FSTR FSTR?62,"king"		; 29x, saved 54
+        .FSTR FSTR?63," SURE "		; 8x, saved 54
         .FSTR FSTR?64,"spectacles"		; 8x, saved 54
-        .FSTR FSTR?65,"LITTLE "		; 6x, saved 53
-        .FSTR FSTR?66,"through"		; 12x, saved 53
+        .FSTR FSTR?65,"through"		; 12x, saved 53
+        .FSTR FSTR?66,"LITTLE "		; 6x, saved 53
         .FSTR FSTR?67,"wearing"		; 12x, saved 53
         .FSTR FSTR?68,"out"		; 56x, saved 53
         .FSTR FSTR?69,"Dungeon"		; 10x, saved 52
         .FSTR FSTR?70," from"		; 19x, saved 52
-        .FSTR FSTR?71,"He "		; 27x, saved 50
-        .FSTR FSTR?72,"midget"		; 14x, saved 50
-        .FSTR FSTR?73,"ticket"		; 14x, saved 50
-        .FSTR FSTR?74,"I "		; 53x, saved 50
-        .FSTR FSTR?75,"IN"		; 27x, saved 50
+        .FSTR FSTR?71,"IN"		; 27x, saved 50
+        .FSTR FSTR?72,"ticket"		; 14x, saved 50
+        .FSTR FSTR?73,"midget"		; 14x, saved 50
+        .FSTR FSTR?74,"He "		; 27x, saved 50
+        .FSTR FSTR?75,"I "		; 53x, saved 50
         .FSTR FSTR?76," of"		; 52x, saved 49
-        .FSTR FSTR?77,"Arthur"		; 11x, saved 48
+        .FSTR FSTR?77," de"		; 51x, saved 48
         .FSTR FSTR?78,"A "		; 51x, saved 48
-        .FSTR FSTR?79,"take"		; 26x, saved 48
-        .FSTR FSTR?80," LILLE "		; 6x, saved 48
-        .FSTR FSTR?81,"room"		; 26x, saved 48
-        .FSTR FSTR?82,"stage-craft"		; 6x, saved 48
-        .FSTR FSTR?83," de"		; 51x, saved 48
-        .FSTR FSTR?84," it"		; 49x, saved 46
-        .FSTR FSTR?85," no"		; 49x, saved 46
-        .FSTR FSTR?86,"Evil"		; 17x, saved 46
+        .FSTR FSTR?79,"stage-craft"		; 6x, saved 48
+        .FSTR FSTR?80,"take"		; 26x, saved 48
+        .FSTR FSTR?81," LILLE "		; 6x, saved 48
+        .FSTR FSTR?82,"room"		; 26x, saved 48
+        .FSTR FSTR?83,"Arthur"		; 11x, saved 48
+        .FSTR FSTR?84,"notice"		; 13x, saved 46
+        .FSTR FSTR?85,"Evil"		; 17x, saved 46
+        .FSTR FSTR?86," it"		; 49x, saved 46
         .FSTR FSTR?87,"It's"		; 13x, saved 46
         .FSTR FSTR?88," mode"		; 17x, saved 46
         .FSTR FSTR?89," for"		; 24x, saved 44
         .FSTR FSTR?90,"west"		; 24x, saved 44
-        .FSTR FSTR?91," DEJLIG"		; 5x, saved 42
+        .FSTR FSTR?91,"direct"		; 12x, saved 42
         .FSTR FSTR?92," PASTRY"		; 5x, saved 42
-        .FSTR FSTR?93,"direct"		; 12x, saved 42
-        .FSTR FSTR?94," lead"		; 15x, saved 40
-        .FSTR FSTR?95,"leave"		; 15x, saved 40
-        .FSTR FSTR?96,"troll"		; 15x, saved 40
+        .FSTR FSTR?93," DEJLIG"		; 5x, saved 42
+        .FSTR FSTR?94," objects"		; 8x, saved 40
+        .FSTR FSTR?95," THE "		; 8x, saved 40
+        .FSTR FSTR?96,"."""		; 22x, saved 40
 WORDS::
         FSTR?1
         FSTR?2

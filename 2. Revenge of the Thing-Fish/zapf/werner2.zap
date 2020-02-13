@@ -4197,10 +4197,10 @@ For a detailed list of differences between classic and modern mode type 'DETAILS
 	SUB CHAPT-NUM,1 >CUR-POS
 	ICALL1 NEW-CURSOR
 ?L5:	INPUT 1 >CHR
-	EQUAL? CHR,81,113 \?L7
+	EQUAL? CHR,81,113,131 \?L7
 	SET 'Q,1
 	JUMP ?L6
-?L7:	EQUAL? CHR,78,110 \?L9
+?L7:	EQUAL? CHR,78,110,130 \?L9
 	ICALL1 ERASE-CURSOR
 	EQUAL? CHAPT-NUM,MAXC \?L10
 	SET 'CUR-POS,0
@@ -4212,7 +4212,7 @@ For a detailed list of differences between classic and modern mode type 'DETAILS
 	SET 'QUEST-NUM,1
 ?L12:	ICALL1 NEW-CURSOR
 	JUMP ?L5
-?L9:	EQUAL? CHR,80,112 \?L13
+?L9:	EQUAL? CHR,80,112,129 \?L13
 	ICALL1 ERASE-CURSOR
 	EQUAL? CHAPT-NUM,1 \?L14
 	SET 'CHAPT-NUM,MAXC
@@ -4224,7 +4224,7 @@ For a detailed list of differences between classic and modern mode type 'DETAILS
 	SET 'QUEST-NUM,1
 ?L16:	ICALL1 NEW-CURSOR
 	JUMP ?L5
-?L13:	EQUAL? CHR,13,10 \?L5
+?L13:	EQUAL? CHR,13,10,132 \?L5
 	ICALL1 PICK-QUESTION
 ?L6:	ZERO? Q /?L0
 	CLEAR -1
@@ -4247,10 +4247,10 @@ For a detailed list of differences between classic and modern mode type 'DETAILS
 	SUB QUEST-NUM,1 >CUR-POS
 	ICALL1 NEW-CURSOR
 ?L1:	INPUT 1 >CHR
-	EQUAL? CHR,81,113 \?L3
+	EQUAL? CHR,81,113,131 \?L3
 	SET 'Q,1
 	JUMP ?L2
-?L3:	EQUAL? CHR,78,110 \?L5
+?L3:	EQUAL? CHR,78,110,130 \?L5
 	ICALL1 ERASE-CURSOR
 	EQUAL? QUEST-NUM,MAXQ \?L6
 	SET 'CUR-POS,0
@@ -4260,7 +4260,7 @@ For a detailed list of differences between classic and modern mode type 'DETAILS
 	INC 'QUEST-NUM
 ?L8:	ICALL1 NEW-CURSOR
 	JUMP ?L1
-?L5:	EQUAL? CHR,80,112 \?L9
+?L5:	EQUAL? CHR,80,112,129 \?L9
 	ICALL1 ERASE-CURSOR
 	EQUAL? QUEST-NUM,1 \?L10
 	SET 'QUEST-NUM,MAXQ
@@ -4270,7 +4270,7 @@ For a detailed list of differences between classic and modern mode type 'DETAILS
 	DEC 'QUEST-NUM
 ?L12:	ICALL1 NEW-CURSOR
 	JUMP ?L1
-?L9:	EQUAL? CHR,13,10 \?L1
+?L9:	EQUAL? CHR,13,10,132 \?L1
 	ICALL1 DISPLAY-HINT
 ?L2:	ZERO? Q /?L0
 	RFALSE
@@ -4350,7 +4350,7 @@ For a detailed list of differences between classic and modern mode type 'DETAILS
 ?L11:	PRINTI "-> "
 	SET 'FLG,0
 ?L10:	INPUT 1 >CHR
-	EQUAL? CHR,81,113 \?L18
+	EQUAL? CHR,81,113,131 \?L18
 	PUT H,1,CNT
 	RTRUE
 ?L18:	EQUAL? CHR,13,10 \?L2

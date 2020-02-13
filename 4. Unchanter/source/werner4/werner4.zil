@@ -1,10 +1,11 @@
 "Werner's Quest, Revisited - 4. Unchanter main file"
 
-;"Release  1 20200117  : First attempt.
+;"Release  1 20200117: First attempt.
+           2 20200213: Arrowkeys in hints. Corrected spelling in hints and added hint about rock-fan/grue in cupboard
 "
 
 <VERSION XZIP>
-<CONSTANT RELEASEID 1>
+<CONSTANT RELEASEID 2>
 
 <SETG EXTRA-FLAGS
     (
